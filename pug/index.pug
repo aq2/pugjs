@@ -4,12 +4,17 @@ html(lang="en")
     include includes/head.pug
   body
     header
-      h1 Ayurvedic Yoga Massage
+        img(src='imgs/header.jpg')
+        h1 Ayurvedic Yoga Massage
     main
       nav
         ul
-          li.active(rel='welcome') Welcome
-          li.active(rel='treatments') Treatments
+          li.tab.active(rel='welcome') Welcome
+          li.tab(rel='treatments') Treatments
+          li.tab(rel='training') Training & Workshops
+          li.tab(rel='yoga') Yoga
+          li.tab(rel='gallery') Gallery
+          li.tab(rel='contact') Contact
       section
         //includes here for each tab
         h1 hi

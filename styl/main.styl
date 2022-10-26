@@ -1,28 +1,107 @@
-// @import 'layout'
+/// colours
+  // general colours
+  $pink = #E0B396
+  $brown = #731C25
+  $green = #4C6425
+  $teal = #016AA7
+  $powder = #C1E5F6
+  $mustard_old = #D5A30B
+  $mustard = #BD900A
+  $lightMustard = rgba($mustard,0.4)  // #E4D19C
+  $lightBrown = rgba($brown,0.9)
+  $lightPink = rgba($pink,0.4)
 
-// h1
-//   color blue
-//   font-size 4rem 
 
-/// layout
   body
+    color black
     background black
+
+  header h1
     color white
 
+  nav
+    color black
+    background $mustard
+  
+  nav li
+    // background 
+
+  nav li.active
+    color black
+    background white
+
+  section
+    color black
+    background white
+
+
+  // layout colours
+  $bgcolor = black;  		// body background
+  $navbar = $mustard;		// inactive nav bar
+  $navactive = white;		// active nav link
+  $navhover = $brown;		// tab on hover
+  $content = white;		// inside tab color
+  $tablehead = $brown;		// color of table furniture
+  $tableHeadText = white;	// text color table head
+  $tablebg = white;		// table background
+  $activeacc = $mustard;	// active accordion!
+  $acc = $lightMustard;	// unactive accordion
+  $acchover = $brown;		// accordion hover
+  $accText = $brown;		// accordion text
+  $accTextHover = white;	// accordion text on hover
+  $footer = $mustard;		// guess what
+  $imgBorder = $brown;		// thin border around images
+
+  // typography
+  $navtext = blue;		// navigation text
+  $navactive = black;		// active tab text color
+  $contenttext = black;	// content text color
+
+
+
+
+/// layout
+  *
+    margin 0
+    padding 0
+    box-sizing border-box
+  
+  
+
   header
-    border 1px solid red
     text-align center
+    position relative
+    
+  header h1
+    position absolute
+    top 240px
+    left 10%
   
   main
-    border 1px solid blue
-    // min-height 800px
-    background blue
     width  90%
     margin 0 auto
 
-  nav
-    border 1px solid orange
-    background orange
   
-  section
-    background green
+//
+/// nav tabs
+
+  nav ul
+    display flex
+    list-style-type none
+    justify-content space-between
+    flex-wrap wrap
+
+  nav li
+    padding 2rem
+    cursor pointer
+    border 2px solid orange
+    flex-grow 1
+    text-align center
+    
+
+*
+    margin 0
+    padding 0
+    box-sizing border-box
+//
+/// and more
