@@ -1,6 +1,16 @@
-html
+doctype html
+html(lang="en")
+  head
+    include includes/head.pug
   body
-    h1 hello distro
-    include ./includes/welcome.pug
-    script(src='./js/eg.js')
-    link(rel='stylesheet' href='main.css')
+    header
+      h1 Ayurvedic Yoga Massage
+    main
+      nav
+        ul
+          li.active(rel='welcome') Welcome
+          li.active(rel='treatments') Treatments
+      section
+        //includes here for each tab
+        h1 hi
+

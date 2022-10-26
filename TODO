@@ -3,13 +3,18 @@
 
 Todo:
   ☐ shit loads!
-  ✔ set up vscode compile hero etc, file structures @done(26-10-22 15:32)
-  ☐ compile hero default vs workspace
-  ✔ test importing stylesheets @done(26-10-22 15:57)
-  ☐ rename www, so it's _hidden_ at the top -> dist??
-  ✘ having js/pug/stylus in /src - too anal @cancelled(26-10-22 15:59)
+  
 
 tabs to accordions:
   ☐ content switcher for tabs
   ☐ portrait mode accordion!
-  try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+  ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+
+setup and config:
+  ✔ set up vscode compile hero etc, file structures @done(26-10-22 15:32)
+  ✔ compile hero default vs workspace @done(26-10-22 16:22)
+  ✔ test importing stylesheets @done(26-10-22 15:57)
+  ✔ rename www, so it's _hidden_ at the top -> dist?? @done(26-10-22 16:22)
+  ✘ having js/pug/stylus in /src - too anal @cancelled(26-10-22 15:59)
+  ✔ live server @done(26-10-22 16:22)
+  ☐ don't use imports in stylus, coz parent-save annoyance - just fold...
