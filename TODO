@@ -3,6 +3,9 @@
 
 Todo:
   ☐ shit loads!
+  ☐ welcome -> include, then include it in index! - resave parent?
+  ☐ => - or just fold them?
+  ☐ add aQuery from imogen
 
 layout:
   ☐ semantic tags
@@ -11,6 +14,7 @@ layout:
 
 tabs to accordions:
   ☐ content switcher for tabs
+    ☐ clickhandlers on tabs to toggle .active data id's?
   ☐ portrait mode accordion!
   ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
 
