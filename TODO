@@ -4,7 +4,10 @@
 Todo:
   ☐ shit loads!
   ✔ set up vscode compile hero etc, file structures @done(26-10-22 15:32)
-  test importing stylesheets
+  ☐ compile hero default vs workspace
+  ✔ test importing stylesheets @done(26-10-22 15:57)
+  ☐ rename www, so it's _hidden_ at the top -> dist??
+  ✘ having js/pug/stylus in /src - too anal @cancelled(26-10-22 15:59)
 
 tabs to accordions:
   ☐ content switcher for tabs

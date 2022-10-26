@@ -1,3 +1,3 @@
-const lemon = 52
+const lemon = 524
 
 alert('lemons stew!')
