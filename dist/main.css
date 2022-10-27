@@ -1,5 +1,5 @@
 body {
-  color: #000;
+  color: #fff;
   background: #000;
 }
 header h1 {
@@ -15,7 +15,7 @@ nav li.active {
 }
 section {
   color: #000;
-  background: #fefcf5;
+  background: #fff;
 }
 * {
   margin: 0;
@@ -43,18 +43,18 @@ main {
 section {
   display: none;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 1rem 0rem;
   justify-content: space-between;
 }
 section.active {
   display: flex;
 }
 section > div {
-  width: 49%;
-  border: 1px solid #008000;
+  border: 2px solid #f00;
 }
 section .right {
   text-align: left;
+  border: 2px solid #00f;
 }
 h2 {
   width: 100%;
