@@ -2,6 +2,9 @@ body {
   color: #fff;
   background: #000;
 }
+header {
+  background: #000;
+}
 header h1 {
   color: #fff;
 }
@@ -29,35 +32,37 @@ body {
 header {
   position: sticky;
   top: 0;
-  border: 1px solid #00f;
 }
 header article {
   border: 2px solid #fff;
+  width: 100%;
+}
+#strootch {
+  text-align: right;
+  border: 1px dashed #ffa500;
+  height: auto;
 }
 header img#stretch {
   border: 2px solid #008000;
-  position: relative;
-  left: 15%;
   z-index: 0;
   transition: 2s;
   height: 400px;
 }
 header img#om {
-  border: 2px solid #008000;
   z-index: 1;
   position: relative;
-  right: 75%;
-  top: -200px;
+  top: -426px;
 }
 header h1 {
-  position: relative;
-  top: -150px;
-  border: 2px solid #008000;
+  position: absolute;
+  top: 150px;
+  left: 0;
   z-index: 12;
   display: inline;
 }
 nav {
   position: relative;
+  top: 200px;
 }
 main {
   margin: 0 auto;
@@ -106,7 +111,7 @@ nav li {
   font-family: 'Philosopher', sans-serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 2rem;

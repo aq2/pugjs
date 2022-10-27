@@ -2,16 +2,15 @@
 *blimey*
 
 Todo:
-  ☐ shit loads!
   ✔ welcome -> include, then include it in index! - resave parent? @done(27-10-22 12:34)
   ✔ could always resave parent => compile 😄 @done(27-10-22 12:34)
   ✘ => - or just fold them? @cancelled(27-10-22 12:34)
-  ☐ extend aQuery => $hide() $show() etc
-  ☐ style, style, style!
+  ✔ extend aQuery => $hide() $show() etc @done(27-10-22 19:45)
   ☐ netlify
   ☐ padding on container, margin on content -> typog?
   ☐ header img gallery slider/carousel
-  ☐ position relative
+  ✔ position relative @done(27-10-22 19:44)
+  ☐ try ordering article elements, and adjust top
 
 
 layout => structure of *blocks* - not _text_:
@@ -29,13 +28,14 @@ tabs to accordions:
 
 
 meeja queeries:
-  ☐ h1 positioning and sizing! top left
+  ✘ h1 positioning and sizing! top left @cancelled(27-10-22 19:46)
 
 setup and config:
   ✔ don't use imports in stylus, coz parent-save annoyance - just fold... @done(27-10-22 12:33)
   ✘ use separate style and css files - no compile needed @cancelled(27-10-22 12:34)
 
 
+================================================
 
 Archive:
   ✔ add aQuery from imogen @done(26-10-22 18:55) @project(Todo)

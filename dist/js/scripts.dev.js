@@ -5,40 +5,27 @@ var stretch = $get('#stretch');
 var header = $get('header');
 var headline = $get('h1');
 var nav = $get('nav');
-var main = $get('main'); // let stretchHeight = stretch.height
+var main = $get('main');
+var strootch = $get('#strootch'); // let stretchHeight = stretch.height
+// let stretchHeight = stretch.offsetHeight
+// let stretchWidth = stretch.width
+// let headerHeight = stretch.offsetHeight + nav.offsetHeight
 
-var stretchHeight = stretch.offsetHeight;
-var stretchWidth = stretch.width;
-var headerHeight = stretch.offsetHeight + nav.offsetHeight; // init()
+init();
 
-function init() {} // headline.style.transform = 'translateY(200px)'
-// nav.style.transform = 'translateY(436px)'
-// console.log(stretch.offsetHeight)
-// nav.style.transform = 'translateY(-' + stretch.offsetHeight +'px)'
-// main.style.transform = 'translateY(' + headerHeight + 'px)'
-// myMove()
-// function myMove() {
-//   let id = null;
-//   const elem = document.getElementById("om");
-//   let pos = 0;
-//   clearInterval(id);
-//   id = setInterval(frame, 5);
-//   function frame() {
-//     if (pos == 2350) {
-//       clearInterval(id);
-//     } else {
-//       pos++;
-//       elem.style.top = pos + 'px';
-//       elem.style.left = pos + 'px';
-//     }
-//   }
-// }
+function init() {
+  // headline.style.transform = 'translateY(200px)'
+  // nav.style.transform = 'translateY(436px)'
+  // console.log(stretch.offsetHeight)
+  // nav.style.transform = 'translateY(-' + stretch.offsetHeight +'px)'
+  // nav.style.transform = 'translateY(-' + 200 +'px)'
+  nav.style.transform = 'translateY(-' + stretch.offsetHeight + 'px)'; // main.style.transform = 'translateY(-' + nav.offsetHeight + 'px)'
+  // header.style.height = stretch.offsetHeight + nav.offsetHeight
 
-
-window.onresize = function (e) {
-  var stretchWidth = stretch.width;
-  console.log(stretchWidth);
-};
+  header.style.height = stretch.offsetHeight + nav.offsetHeight + 'px';
+  console.log(header.style.height);
+  strootch.style.height = 100 - stretch.offsetHeight + 'px'; // main.style.transform = 'translateY(' + -200 + 'px)'
+}
 
 var delay = 150;
 var range = 'XXX';
@@ -57,15 +44,31 @@ function scroller() {
   // console.log(scaleFactor)
   // todo maths nope 👇
 
-  stretch.style.transform = 'scale(' + scaleFactor + ')'; // console.log(parseInt(scrollFactor) + ' f')
-  // header.style.transform = 'scale(' + scrollFactor + '0.4)'
-  // header.style.transform = 'scale(' + scrollFactor + '0.4)'
-  // header.style.transform = 'scale(0.4)'
-  // init()
-}
+  stretch.style.transform = 'scale(' + scaleFactor + ')';
+} // window.onresize = function (e) {
+//   let stretchWidth = stretch.width
+//   console.log(stretchWidth)
+// }
+// myMove()
+// function myMove() {
+//   let id = null;
+//   const elem = document.getElementById("om");
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 5);
+//   function frame() {
+//     if (pos == 2350) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + 'px';
+//       elem.style.left = pos + 'px';
+//     }
+//   }
+// }
+//
+/// aQuery
 
-window.addEventListener('scroll', function () {// scrollIt()
-}); /// aQuery
 
 function $all(elements) {
   return document.querySelectorAll(elements);
