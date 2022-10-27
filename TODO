@@ -6,14 +6,15 @@ Todo:
   ☐ welcome -> include, then include it in index! - resave parent?
   ☐ could always resave parent => compile 😄
   ☐ => - or just fold them?
-  ✔ add aQuery from imogen @done(26-10-22 18:55)
   ☐ extend aQuery => $hide() $show() etc
   ☐ style, style, style!
 
+strategies:
+  ☐ use separate style and css files - no compile needed
+  ☐ ...but includes useful in pug...
+
 layout:
-  ✔ semantic tags -> section @done(26-10-22 19:00)
-  ✔ flexy nav @done(26-10-22 17:06)
-  ✔ positioning @done(26-10-22 17:07)
+  ☐ sticky shrinking header
 
 tabs to accordions:
   ☐ clickhandlers on tabs to toggle .active data id's?
@@ -25,10 +26,15 @@ meeja queeries:
   ☐ h1 positioning and sizing! top left
 
 setup and config:
-  ✔ set up vscode compile hero etc, file structures @done(26-10-22 15:32)
-  ✔ compile hero default vs workspace @done(26-10-22 16:22)
-  ✔ test importing stylesheets @done(26-10-22 15:57)
-  ✔ rename www, so it's _hidden_ at the top -> dist?? @done(26-10-22 16:22)
-  ✘ having js/pug/stylus in /src - too anal @cancelled(26-10-22 15:59)
-  ✔ live server @done(26-10-22 16:22)
   ☐ don't use imports in stylus, coz parent-save annoyance - just fold...
+Archive:
+  ✔ add aQuery from imogen @done(26-10-22 18:55) @project(Todo)
+  ✔ semantic tags -> section @done(26-10-22 19:00) @project(layout)
+  ✔ flexy nav @done(26-10-22 17:06) @project(layout)
+  ✔ positioning @done(26-10-22 17:07) @project(layout)
+  ✘ having js/pug/stylus in /src - too anal @cancelled(26-10-22 15:59) @project(setup and config)
+  ✔ live server @done(26-10-22 16:22) @project(setup and config)
+  ✔ test importing stylesheets @done(26-10-22 15:57) @project(setup and config)
+  ✔ rename www, so it's _hidden_ at the top -> dist?? @done(26-10-22 16:22) @project(setup and config)
+  ✔ set up vscode compile hero etc, file structures @done(26-10-22 15:32) @project(setup and config)
+  ✔ compile hero default vs workspace @done(26-10-22 16:22) @project(setup and config)

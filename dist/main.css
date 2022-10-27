@@ -32,11 +32,12 @@ header img {
 }
 header h1 {
   position: absolute;
-  top: 240px;
+  top: 50%;
   left: 10%;
 }
 main {
   width: 90%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 section {
@@ -56,8 +57,6 @@ section .right {
   text-align: left;
 }
 h2 {
-  color: #00f;
-  font-size: 2rem;
   width: 100%;
 }
 nav ul {
@@ -67,9 +66,33 @@ nav ul {
   flex-wrap: wrap;
 }
 nav li {
-  padding: 2rem;
+  padding: 1rem;
   cursor: pointer;
   border: 2px solid #ffa500;
   flex-grow: 1;
   text-align: center;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+}
+h1,
+h2,
+h3,
+nav li {
+  font-family: 'Philosopher', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+nav li {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
 }

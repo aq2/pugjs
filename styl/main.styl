@@ -78,11 +78,12 @@
 
   header h1
     position absolute
-    top 240px
+    top 50%
     left 10%
   
   main
     width  90%
+    max-width 1600px
     margin 0 auto
 
   section
@@ -102,12 +103,7 @@
     text-align left
 
   h2
-    // margin-bottom 0.5rem
-    color blue
-    font-size 2rem
-    // display block
     width 100%
-    // flex-grow 2
 
 //
 /// nav tabs
@@ -119,13 +115,35 @@
     flex-wrap wrap
 
   nav li
-    padding 2rem
+    padding 1rem
     cursor pointer
     border 2px solid orange
     flex-grow 1
     text-align center
     
+/// typography
 
+  body
+    font-family 'Mulish', sans-serif
+  
+  h1, h2, h3, nav li
+    font-family 'Philosopher', sans-serif
+
+  h1
+    font-size 4rem
+  
+  h2
+    font-size 2rem
+
+  h3
+    font-size 1.5rem
+
+  nav li
+    font-size 2.5rem
+    // font-weight bold
+
+  p
+    font-size 1.5rem
 
 //
 /// and more
