@@ -14,6 +14,8 @@ Todo:
 
 layout => structure of *blocks* - not _text_:
   ☐ 💡 sticky shrinking header onscroll down!
+  ☐ gsap too much? we just want simple stuff for now!
+  ☐ om glow on scroll
 
 
 tabs to accordions:

@@ -27,14 +27,38 @@ body {
   margin: 0 auto;
 }
 header {
-  position: relative;
-  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  border: 2px solid #fff;
+  min-height: 800px;
+}
+header img#stretch {
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #008000;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transform-origin: 0 0;
+  transition: 2s;
+}
+header img#om {
+  border: 2px solid #008000;
+  z-index: 1;
+  position: absolute;
+  left: 0;
 }
 header h1 {
   position: absolute;
-  top: 50%;
-  left: 0%;
+  top: 0;
+  border: 2px solid #008000;
+  z-index: 2;
 }
+.cheeky {
+  min-height: 200px;
+  background: #ffa500;
+}
+nav,
 main {
   margin: 0 auto;
 }

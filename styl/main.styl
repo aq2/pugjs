@@ -74,20 +74,50 @@
 
   header
     // text-align right
-    position relative
-    margin-bottom 1rem
+    position sticky
+    top 0
+    // left 0
+    // margin-bottom 1rem
+    border 2px solid white
+    min-height 800px
+    // height auto
+    // display inline-block
 
-  // header img
-  //   width 90%
-  //   max-width 800px
-  //   border 2px solid green
+  header img#stretch
+    width 90%
+    max-width 800px
+    border 2px solid green
+    position absolute
+    // right 0%
+    top 0
+    z-index 0
+    transform-origin 0 0
+    transition 2s
+
+  header img#om
+    // width 90%
+    // max-width 800px
+    border 2px solid green
+    z-index 1
+    position absolute
+    left 0
+    // right 0%
 
   header h1
     position absolute
-    top 50%
-    left 0%
+    // top 50%
+    top 0
+    // left 0%
+    border 2px solid green
+    z-index 2
+    
+  .cheeky
+    min-height 200px
+    background orange
   
 
+  nav
+    
 
 
   main

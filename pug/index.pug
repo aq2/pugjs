@@ -7,8 +7,7 @@ html(lang="en")
       h1 Ayurvedic Yoga Massage
       img#stretch(src='imgs/stretch.jpg')
       img#om(src='imgs/om.png')
-    main
-      /// nav
+      //- .cheeky
       nav
         ul
           li.tab.active(rel='welcome') Welcome
@@ -20,9 +19,12 @@ html(lang="en")
           li.tab(rel='gallery') Gallery
           li.tab(rel='contact') Contact
       
+    main
       include includes/welcome.pug
       //- include includes/treatments.pug
       //- include includes/training.pug
       //- include includes/yoga.pug
       //- include includes/gallery.pug
       //- include includes/contact.pug
+    
+    script(src='js/scripts.dev.js')
