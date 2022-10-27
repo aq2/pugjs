@@ -69,61 +69,55 @@
     box-sizing border-box
   
   body
-    max-width 1200px
+    max-width 1360px
     margin 0 auto
 
   header
-    // text-align right
     position sticky
     top 0
-    // left 0
-    // margin-bottom 1rem
+    border 1px solid blue
+
+  header article
     border 2px solid white
-    min-height 800px
-    // height auto
-    // display inline-block
 
   header img#stretch
-    width 90%
-    max-width 800px
     border 2px solid green
-    position absolute
-    // right 0%
-    top 0
+    position relative
+    // top -100px
+    // right 100%
+    left 15%
     z-index 0
-    transform-origin 0 0
     transition 2s
+    height 400px
 
   header img#om
-    // width 90%
-    // max-width 800px
     border 2px solid green
     z-index 1
-    position absolute
-    left 0
-    // right 0%
+    position relative
+    // top -426px
+    // top 100%
+    // left -75%
+    right 75%
+    top -200px
 
   header h1
-    position absolute
-    // top 50%
-    top 0
-    // left 0%
+    position relative
+    top -150px
     border 2px solid green
-    z-index 2
-    
-  .cheeky
-    min-height 200px
-    background orange
-  
+    z-index 12
+    display inline
 
   nav
-    
+    position relative
+    // top -200px
 
 
   main
     // width  90%
     // max-width 1200px
     margin 0 auto
+    position relative
+    z-index -99
 
   section
     display none
@@ -173,7 +167,7 @@
     font-family 'Philosopher', sans-serif
 
   h1
-    font-size 4rem
+    font-size 3rem
   
   h2
     font-size 2rem

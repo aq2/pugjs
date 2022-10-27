@@ -23,44 +23,46 @@ section {
   box-sizing: border-box;
 }
 body {
-  max-width: 1200px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 header {
   position: sticky;
   top: 0;
+  border: 1px solid #00f;
+}
+header article {
   border: 2px solid #fff;
-  min-height: 800px;
 }
 header img#stretch {
-  width: 90%;
-  max-width: 800px;
   border: 2px solid #008000;
-  position: absolute;
-  top: 0;
+  position: relative;
+  left: 15%;
   z-index: 0;
-  transform-origin: 0 0;
   transition: 2s;
+  height: 400px;
 }
 header img#om {
   border: 2px solid #008000;
   z-index: 1;
-  position: absolute;
-  left: 0;
+  position: relative;
+  right: 75%;
+  top: -200px;
 }
 header h1 {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -150px;
   border: 2px solid #008000;
-  z-index: 2;
+  z-index: 12;
+  display: inline;
 }
-.cheeky {
-  min-height: 200px;
-  background: #ffa500;
+nav {
+  position: relative;
 }
-nav,
 main {
   margin: 0 auto;
+  position: relative;
+  z-index: -99;
 }
 section {
   display: none;
@@ -104,7 +106,7 @@ nav li {
   font-family: 'Philosopher', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2rem;

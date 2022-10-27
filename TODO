@@ -10,12 +10,15 @@ Todo:
   ☐ style, style, style!
   ☐ netlify
   ☐ padding on container, margin on content -> typog?
+  ☐ header img gallery slider/carousel
+  ☐ position relative
 
 
 layout => structure of *blocks* - not _text_:
   ☐ 💡 sticky shrinking header onscroll down!
-  ☐ gsap too much? we just want simple stuff for now!
+  ✘ gsap too much? we just want simple stuff for now! @cancelled(27-10-22 18:04)
   ☐ om glow on scroll
+  ✔ eventhandling debounce throttling @done(27-10-22 19:13)
 
 
 tabs to accordions:
