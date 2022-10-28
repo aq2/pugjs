@@ -12,6 +12,8 @@ Todo:
 
 layout => structure of *blocks* - not _text_:
   ☐ scrolling still raggedy
+  ☐ fuck scrolling - just start it small in first place!
+  ☐ fancier intro animations?
   ☐ recrop hero right-side!
   ☐ bring back the om!
   ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
