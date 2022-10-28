@@ -1,5 +1,5 @@
+let firstPage = 'treatments' //?
 /// init
-  let firstPage = 'treatments' //?
   
   const hero = $('#hero')
   const header = $('header')  
@@ -40,11 +40,8 @@
       headline.style.animation = 'headingUp'
       headline.style.animationDuration = '2s'
       headline.style.animationFillMode ='forwards'
-
     }
     // header.style.height = hero.offsetHeight + 'px'
-    // header.style.height = '100px'
-    // header.style.background = '#ccc'
     blackness.style.height = '300px'    
   }
 

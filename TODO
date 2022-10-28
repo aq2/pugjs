@@ -4,28 +4,39 @@ Todo:
   ☐ bigger side images  
   ☐ treatments layout
   ☐ button hover transitions
+  ☐ icons on buttons
+  ✔ intro animations @done(28-10-22 20:12)
   ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36)
   ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
   ✔ aint getting da clicks? @done(28-10-22 14:35)
   ✔ z-indices? @done(28-10-22 16:29)
   ✔ no moar includes -> no 'compiling one-two' @done(28-10-22 19:36)
+  ✔ favicon @done(28-10-22 20:10)
+  ✔ call it 'app.js', like a proper _dev_ @done(28-10-22 20:11)
+  ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55)
+
 
 //
-layout => structure of *blocks* - not _text_:
+scroller:
   ☐ scrolling still raggedy
-  ☐ fuck scrolling - just start it small in first place!  
+  ☐ fuck scrolling - just start it small in first place!
+  ✔ 💩 clunky 'blackness' div @done(28-10-22 20:11)
   ✔ recrop hero right-side! @done(28-10-22 18:35)
   ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
   ✔ move title up on scroll @done(28-10-22 12:34)
   ✔ take out the om @done(28-10-22 12:04)
   ✘ header glow on scroll @cancelled(28-10-22 12:04)
-  ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55)
+  
 
 //
-tabs to accordions:
+tabs:
+  ✔ get 'em working @done(28-10-22 20:15)
+  ✔ 💡 use same id/class name => 😺💡 @done(28-10-22 23:59)
+  ✔ 💡 fade-ins @done(28-10-22 20:15)
   ✔ why the shift when switching tab? -> scrollbar appears! @done(28-10-22 16:22)
   ✔ going to have to chose initial tab @done(28-10-22 16:19)
   ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55)
+
 
 //  
 meeja queeries:

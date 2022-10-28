@@ -75,8 +75,8 @@
     box-sizing border-box
   
   body
-    max-width 1360px
     margin 0 auto
+    max-width 1360px
     overflow-y scroll
 
   #blackness
@@ -93,21 +93,21 @@
     transform-origin top right
 
   header img#hero
-    transition 0.5s
     height 400px
-    transform-origin top right
+    transition 0.5s
     // animation-name opac
     animation-duration 2s
+    transform-origin top right
     animation-fill-mode forwards
   
   header h1
-    position absolute
-    top 150px
     left 0
+    top 150px
     z-index 12
     display inline
-    // animation headingDown
+    position absolute
     animation-duration 2s
+    // animation headingDown
     animation-fill-mode forwards
 
   @keyframes headingDown
@@ -124,17 +124,16 @@
 
   nav
     top 210px
-    position sticky
-    // animation-name opac
-    animation-duration 3s
-    animation-fill-mode forwards
     z-index 5
+    position sticky
+    animation-duration 3s
+    // animation-name opac
+    animation-fill-mode forwards
 
   main
+    z-index 1
     margin 0 auto
     position relative
-    z-index 1
-    // opacity 0
     // animation-name opac
     animation-duration 3s
     animation-fill-mode forwards
@@ -149,11 +148,11 @@
     opacity 0
     display none
     padding 1rem 2rem
-    justify-content space-between
     transition opacity 2s
+    justify-content space-between
     &.active
-      display inline-block
       animation-name opac
+      display inline-block
       animation-duration 1s
       animation-fill-mode forwards
   
@@ -182,35 +181,31 @@
     margin-right -20px
     position absolute
 
-  h2
-    width 100%
   
   button
-    border 2px solid $brown
-    padding 1rem 2rem
-    background $mustard
-    font-size 1.5rem
     color $om
     margin 1rem
+    font-size 1.5rem
+    padding 1rem 2rem
+    background $mustard
+    border 2px solid $brown
   
-  a
-    text-decoration none
-
+ 
 //
 /// nav tabs
 
   nav
     display flex
+    flex-wrap wrap
     list-style-type none
     justify-content space-between
-    flex-wrap wrap
 
   nav .tab
+    flex-grow 1
     padding 1rem
     cursor pointer
-    border 2px solid orange
-    flex-grow 1
     text-align center
+    border 2px solid orange
 
 //    
 /// typography
@@ -225,6 +220,7 @@
     font-size 4rem
   
   h2
+    width 100%
     font-size 2.5rem
     margin-bottom 0.5rem
 
@@ -236,8 +232,8 @@
     // font-weight bold
 
   p, li
-    font-size 1.5rem
     line-height 1.3
+    font-size 1.5rem
     margin-bottom 0.75rem
 
   li
@@ -253,6 +249,9 @@
 
   td
     font-size 1.33rem
+
+  a
+    text-decoration none
 
 //
 /// textimonial
@@ -294,14 +293,14 @@
     margin 0 auto 1em auto
     font-size 1.25rem
 
-th, td
-  color $contenttext
-  border 1px solid $tablehead
-  padding 0.5em 1em
-  border-collapse collapse
+  th, td
+    padding 0.5em 1em
+    color $contenttext
+    border-collapse collapse
+    border 1px solid $tablehead
 
-th
-  background $tablehead
-  color $tableHeadText
-  &.last
-    border-right: none
+  th
+    color $tableHeadText
+    background $tablehead
+    &.last
+      border-right: none

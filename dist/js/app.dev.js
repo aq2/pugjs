@@ -1,7 +1,7 @@
 "use strict";
 
-/// init
 var firstPage = 'treatments'; //?
+/// init
 
 var hero = $('#hero');
 var header = $('header');
@@ -40,8 +40,6 @@ function scroller() {
     headline.style.animationDuration = '2s';
     headline.style.animationFillMode = 'forwards';
   } // header.style.height = hero.offsetHeight + 'px'
-  // header.style.height = '100px'
-  // header.style.background = '#ccc'
 
 
   blackness.style.height = '300px';
