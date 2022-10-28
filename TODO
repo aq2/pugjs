@@ -3,33 +3,33 @@
 
 Todo:
   ☐ netlify
-  ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36)
-  ☐ header img gallery slider/carousel
-  ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
   ☐ bigger side images
+  ☐ header img gallery slider/carousel
+  ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36)
+  ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
   ✔ aint getting da clicks? @done(28-10-22 14:35)
-  ☐ z-indices?
+  ✔ z-indices? @done(28-10-22 16:29)
 
 layout => structure of *blocks* - not _text_:
   ☐ scrolling still raggedy
+  ☐ recrop hero right-side!
+  ☐ bring back the om!
   ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
   ✔ move title up on scroll @done(28-10-22 12:34)
-  ☐ recrop hero right-side!
   ✔ take out the om @done(28-10-22 12:04)
-  ☐ bring back the om!
   ✘ header glow on scroll @cancelled(28-10-22 12:04)
   ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55)
 
 tabs to accordions:
-  ☐ going to have to chose initial tab
+  ✔ why the shift when switching tab? -> scrollbar appears! @done(28-10-22 16:22)
+  ✔ going to have to chose initial tab @done(28-10-22 16:19)
   ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55)
-  ☐ portrait mode accordion!
-    ☐ do we _even_ need?
-    ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+  
+  meeja queeries:
+    ☐ portrait mode accordion!
+      ☐ do we _even_ need?
+      ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
 
-meeja queeries:
-
-setup and config:
 
 ================================================
 

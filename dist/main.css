@@ -34,6 +34,7 @@ section {
 body {
   max-width: 1360px;
   margin: 0 auto;
+  overflow-y: scroll;
 }
 #blackness {
   top: 0;
@@ -46,7 +47,6 @@ header {
   height: 400px;
   position: sticky;
   text-align: right;
-  border: 1px solid #00f;
   transform-origin: top right;
 }
 header img#hero {
@@ -80,12 +80,17 @@ main {
   animation-fill-mode: forwards;
 }
 section {
+  opacity: 0;
   display: none;
   padding: 1rem 2rem;
   justify-content: space-between;
+  transition: opacity 2s;
 }
 section.active {
   display: inline-block;
+  animation-name: opac;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 aside {
   display: flex;
