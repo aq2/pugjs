@@ -1,13 +1,13 @@
 "use strict";
 
 /// init
+var firstPage = 'treatments'; //?
+
 var hero = $('#hero');
 var header = $('header');
 var headline = $('h1');
 var nav = $('nav');
 var blackness = $('#blackness');
-var firstPage = 'welcome'; ///
-
 var oldSection = $('.' + firstPage);
 var oldTab = $('#' + firstPage);
 $show(oldTab);

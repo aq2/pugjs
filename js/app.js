@@ -1,11 +1,12 @@
 /// init
+  let firstPage = 'treatments' //?
+  
   const hero = $('#hero')
   const header = $('header')  
   const headline = $('h1')  
   const nav = $('nav')
   const blackness = $('#blackness')
   
-  let firstPage = 'welcome' ///
   let oldSection = $('.' + firstPage)
   let oldTab = $('#' + firstPage)
   $show(oldTab)

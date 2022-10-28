@@ -1,36 +1,44 @@
 ## new pughar js! ##
-*blimey*
 
 Todo:
-  ☐ netlify -> namecheap?
-  ☐ bigger side images
-  ☐ header img gallery slider/carousel
+  ☐ bigger side images  
+  ☐ treatments layout
+  ☐ button hover transitions
   ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36)
   ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
   ✔ aint getting da clicks? @done(28-10-22 14:35)
   ✔ z-indices? @done(28-10-22 16:29)
 
+//
 layout => structure of *blocks* - not _text_:
   ☐ scrolling still raggedy
-  ☐ fuck scrolling - just start it small in first place!
-  ☐ fancier intro animations?
-  ☐ recrop hero right-side!
-  ☐ bring back the om!
+  ☐ fuck scrolling - just start it small in first place!  
+  ✔ recrop hero right-side! @done(28-10-22 18:35)
   ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
   ✔ move title up on scroll @done(28-10-22 12:34)
   ✔ take out the om @done(28-10-22 12:04)
   ✘ header glow on scroll @cancelled(28-10-22 12:04)
   ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55)
 
+//
 tabs to accordions:
   ✔ why the shift when switching tab? -> scrollbar appears! @done(28-10-22 16:22)
   ✔ going to have to chose initial tab @done(28-10-22 16:19)
   ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55)
-  
-  meeja queeries:
-    ☐ portrait mode accordion!
-      ☐ do we _even_ need?
-      ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+
+//  
+meeja queeries:
+  ☐ portrait mode accordion!
+    ☐ do we _even_ need?
+    ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+
+//
+one day:
+  ☐ netlify -> namecheap? -< 👋 vidahost
+  ☐ header img gallery slider/carousel
+  ☐ 💡 timetrade??
+  ☐ fancier intro animations?
+  ☐ bring back the om!
 
 
 ================================================
