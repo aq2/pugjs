@@ -1,8 +1,5 @@
 #blackness {
   background: #000;
-  position: sticky;
-  top: 0;
-  z-index: 5;
 }
 body {
   color: #fff;
@@ -12,15 +9,18 @@ header {
   background: #000;
 }
 header h1 {
-  color: #fff;
+  color: #fef8e7;
 }
 nav {
   color: #000;
   background: #bd900a;
 }
+nav .tab {
+  color: #072966;
+}
 nav .tab.active {
   color: #000;
-  background: #fff;
+  background: #fef8e7;
 }
 section {
   color: #000;
@@ -35,13 +35,18 @@ body {
   max-width: 1360px;
   margin: 0 auto;
 }
-header {
-  position: sticky;
+#blackness {
   top: 0;
-  text-align: right;
   z-index: 5;
-  border: 1px solid #00f;
+  position: sticky;
+}
+header {
+  top: 0;
+  z-index: 5;
   height: 400px;
+  position: sticky;
+  text-align: right;
+  border: 1px solid #00f;
   transform-origin: top right;
 }
 header img#hero {

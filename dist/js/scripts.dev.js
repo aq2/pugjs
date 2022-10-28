@@ -1,31 +1,22 @@
 "use strict";
 
+/// init
+var hero = $('#hero');
+var header = $('header');
+var headline = $('h1');
+var nav = $('nav'); // const main = $('main')
+
+var blackness = $('#blackness'); // const tabs = $all('.tab')
+// let newSection = 'welcome'
+
+var firstPage = 'welcome'; ///
+
+var oldSection = $('.' + firstPage);
+var oldTab = $('#' + firstPage);
+oldTab.classList.add('active');
+oldSection.classList.add('active'); //
+//
 /// hero
-var hero = $get('#hero');
-var header = $get('header');
-var headline = $get('h1');
-var nav = $get('nav');
-var main = $get('main');
-var strootch = $get('#strootch');
-var blackness = $('#blackness'); // let stretchHeight = hero.height
-// let stretchHeight = hero.offsetHeight
-// let stretchWidth = hero.width
-// let headerHeight = hero.offsetHeight + nav.offsetHeight
-// init()
-
-function init() {
-  // headline.style.transform = 'translateY(200px)'
-  // nav.style.transform = 'translateY(436px)'
-  // console.log(hero.offsetHeight)
-  // nav.style.transform = 'translateY(-' + hero.offsetHeight +'px)'
-  // nav.style.transform = 'translateY(-' + 200 +'px)'
-  nav.style.transform = 'translateY(-' + hero.offsetHeight + 'px)'; // main.style.transform = 'translateY(-' + nav.offsetHeight + 'px)'
-  // header.style.height = hero.offsetHeight + nav.offsetHeight
-
-  header.style.height = hero.offsetHeight + nav.offsetHeight + 'px';
-  console.log(header.style.height);
-  strootch.style.height = 100 - hero.offsetHeight + 'px'; // main.style.transform = 'translateY(' + -200 + 'px)'
-}
 
 var delay = 2;
 var range = 'XXX';
@@ -35,7 +26,8 @@ window.onscroll = function (e) {
   // todo only bother calling these if scrolltop not exceeded?
   clearTimeout(timeout);
   timeout = setTimeout(scroller, delay);
-};
+}; // todo - CLUNKY! 💩
+
 
 function scroller() {
   var scrollTop = document.documentElement.scrollTop;
@@ -60,26 +52,26 @@ function scroller() {
 //   let stretchWidth = hero.width
 //   console.log(stretchWidth)
 // }
-// myMove()
-// function myMove() {
-//   let id = null;
-//   const elem = document.getElementById("om");
-//   let pos = 0;
-//   clearInterval(id);
-//   id = setInterval(frame, 5);
-//   function frame() {
-//     if (pos == 2350) {
-//       clearInterval(id);
-//     } else {
-//       pos++;
-//       elem.style.top = pos + 'px';
-//       elem.style.left = pos + 'px';
-//     }
-//   }
-// }
+//
+//
+/// smerking tabs!
+
+
+nav.addEventListener('click', function (e) {
+  var newTab = e.target;
+  var newSection = $('.' + newTab.id); // newTab.style.color = 'green' /// -> or display = none/block
+  // deactivate old section and tab
+
+  oldSection.classList.remove('active');
+  oldTab.classList.remove('active'); // activate new section and tab
+
+  newTab.classList.add('active');
+  newSection.classList.add('active');
+  oldSection = newSection;
+  oldTab = newTab;
+}); //
 //
 /// aQuery
-
 
 function $(element) {
   return document.querySelector(element);

@@ -11,12 +11,11 @@
   $lightMustard = rgba($mustard,0.4)  // #E4D19C
   $lightBrown = rgba($brown,0.9)
   $lightPink = rgba($pink,0.4)
+  $white = lightness($mustard, 95)
+  $om = #072966
 
   #blackness
     background black
-    position sticky
-    top 0
-    z-index 5
 
   body
     color white
@@ -26,23 +25,22 @@
     background black
 
   header h1
-    color white
+    color $white
 
   nav
     color black
     background $mustard
   
   nav .tab
-    // background 
+    color $om
 
   nav .tab.active
     color black
-    background white
+    background $white
 
   section
     color black
-    // background white
-    background lightness($mustard, 95)
+    background $white
 
 
   // layout colours
@@ -80,13 +78,18 @@
     max-width 1360px
     margin 0 auto
 
-  header
-    position sticky
+  #blackness
     top 0
-    text-align right
     z-index 5
-    border 1px solid blue
+    position sticky
+  
+  header
+    top 0
+    z-index 5
     height 400px
+    position sticky
+    text-align right
+    border 1px solid blue
     transform-origin top right
 
 

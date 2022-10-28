@@ -18,10 +18,11 @@ layout => structure of *blocks* - not _text_:
   ✔ take out the om @done(28-10-22 12:04)
   ☐ bring back the om!
   ✘ header glow on scroll @cancelled(28-10-22 12:04)
-  ☐ does nav have to be a ul? what else?
+  ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55)
 
 tabs to accordions:
-  ☐ clickhandlers on tabs to toggle .active data id's?
+  ☐ going to have to chose initial tab
+  ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55)
   ☐ portrait mode accordion!
     ☐ do we _even_ need?
     ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*

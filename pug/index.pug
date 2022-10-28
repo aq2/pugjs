@@ -11,18 +11,18 @@ html(lang="en")
         //- img#om(src='imgs/om.png')
       
     nav
-      .tab.active(rel='welcome') Welcome
-      .tab(rel='treatments') Treatments
-      .tab(rel='training') Massage Training
-      .tab(rel='yoga') Yoga Classes
-      .tab(rel='joyful') Joyful Living
-      .tab(rel='dosha') Dosha Principles
-      .tab(rel='gallery') Gallery
-      .tab(rel='contact') Contact
+      .tab#welcome Welcome
+      .tab#treatments Treatments
+      .tab#training Massage Training
+      .tab#yoga Yoga Classes
+      .tab#joyful Joyful Living
+      .tab#dosha Dosha Principles
+      .tab#gallery Gallery
+      .tab#contact Contact
       
     main
       /// welcome
-      section.active
+      section.welcome
   
         h2 What is Ayurvedic Yoga Massage?
         aside
@@ -83,16 +83,9 @@ html(lang="en")
             A massage with Saghar is a very special experience. She has an extraordinary talent for 'reading' the body and what it needs, and her massage is truly healing on both a physical and a psychological level.
           .punter Sarah  
 
+      //
+      /// treatments
+      section.treatments
+        h2 HI!      
           
-
-        //- .testimonial
-        //-     blockquote.
-        //-         A massage with Saghar is a very special experience. She has an extraordinary
-        //-         talent for 'reading' the body and what it needs, and her massage is truly healing
-        //-         on both a physical and a psychological level.
-        //-     div
-        //-     p Sarah
-
-            
-          
-        script(src='js/scripts.dev.js')
+  script(src='js/scripts.dev.js')

@@ -1,34 +1,24 @@
-/// hero
-  const hero = $get('#hero')
-  const header = $get('header')  
-  const headline = $get('h1')  
-  const nav = $get('nav')
-  const main = $get('main')
-  const strootch = $get('#strootch')
+/// init
+  const hero = $('#hero')
+  const header = $('header')  
+  const headline = $('h1')  
+  const nav = $('nav')
+  // const main = $('main')
   const blackness = $('#blackness')
-
-  // let stretchHeight = hero.height
-  // let stretchHeight = hero.offsetHeight
-  // let stretchWidth = hero.width
-  // let headerHeight = hero.offsetHeight + nav.offsetHeight
+  // const tabs = $all('.tab')
+  // let newSection = 'welcome'
   
-  // init()
-  function init() {
-    // headline.style.transform = 'translateY(200px)'
-    // nav.style.transform = 'translateY(436px)'
-    // console.log(hero.offsetHeight)
-    // nav.style.transform = 'translateY(-' + hero.offsetHeight +'px)'
-    // nav.style.transform = 'translateY(-' + 200 +'px)'
-    nav.style.transform = 'translateY(-' + hero.offsetHeight +'px)'
-    // main.style.transform = 'translateY(-' + nav.offsetHeight + 'px)'
-    // header.style.height = hero.offsetHeight + nav.offsetHeight
-    header.style.height = hero.offsetHeight + nav.offsetHeight + 'px'
-    console.log(header.style.height)
-    strootch.style.height = 100 - hero.offsetHeight + 'px'
-    // main.style.transform = 'translateY(' + -200 + 'px)'
-  }
-    
+  let firstPage = 'welcome' ///
 
+  let oldSection = $('.' + firstPage)
+  let oldTab = $('#' + firstPage)
+  oldTab.classList.add('active')
+  oldSection.classList.add('active')
+
+//
+//
+/// hero
+  
   let delay = 2
   let range = 'XXX'
   let timeout = false
@@ -38,6 +28,7 @@
     timeout = setTimeout(scroller, delay)
   }
 
+  // todo - CLUNKY! 💩
   function scroller() {
     let scrollTop = document.documentElement.scrollTop
     let stretchHeight = hero.offsetHeight
@@ -48,7 +39,6 @@
     if (scaleFactor > 0.4) {
       header.style.transform = 'scale(' + scaleFactor + ')'
       // hero.style.transform = 'scale(' + scaleFactor + ')'
-
       
       headline.style.animation = 'headingUp'
       headline.style.animationDuration = '2s'
@@ -58,9 +48,7 @@
     // header.style.height = hero.offsetHeight + 'px'
     // header.style.height = '100px'
     // header.style.background = '#ccc'
-    blackness.style.height = '300px'
-
-    
+    blackness.style.height = '300px'    
   }
 
   // window.onresize = function (e) {
@@ -69,24 +57,32 @@
   // }
 
 
-  // myMove()
-    // function myMove() {
-    //   let id = null;
-    //   const elem = document.getElementById("om");
-    //   let pos = 0;
-    //   clearInterval(id);
-    //   id = setInterval(frame, 5);
-    //   function frame() {
-    //     if (pos == 2350) {
-    //       clearInterval(id);
-    //     } else {
-    //       pos++;
-    //       elem.style.top = pos + 'px';
-    //       elem.style.left = pos + 'px';
-    //     }
-    //   }
-    // }
+//
+//
+/// smerking tabs!
+  
+  nav.addEventListener('click', (e) => {
+    let newTab = e.target
+    let newSection = $('.' + newTab.id)
+    
+    // newTab.style.color = 'green' /// -> or display = none/block
+    
+    // deactivate old section and tab
+    oldSection.classList.remove('active')
+    oldTab.classList.remove('active')
+    
+    // activate new section and tab
+    newTab.classList.add('active')
+    newSection.classList.add('active')
 
+    oldSection = newSection
+    oldTab = newTab
+  })
+
+
+
+
+//
 //
 /// aQuery
 
