@@ -4,11 +4,8 @@
 var hero = $('#hero');
 var header = $('header');
 var headline = $('h1');
-var nav = $('nav'); // const main = $('main')
-
-var blackness = $('#blackness'); // const tabs = $all('.tab')
-// let newSection = 'welcome'
-
+var nav = $('nav');
+var blackness = $('#blackness');
 var firstPage = 'welcome'; ///
 
 var oldSection = $('.' + firstPage);
@@ -59,15 +56,13 @@ function scroller() {
 
 nav.addEventListener('click', function (e) {
   var newTab = e.target;
-  var newSection = $('.' + newTab.id); // newTab.style.color = 'green' //? -> or display = none/block
-  //? fade in?
-  // deactivate old section and tab
+  var newSection = $('.' + newTab.id); // deactivate old section and tab
 
-  oldSection.classList.remove('active');
-  oldTab.classList.remove('active'); // activate new section and tab
+  $hide(oldTab);
+  $hide(oldSection); // activate new section and tab
 
-  newTab.classList.add('active');
-  newSection.classList.add('active');
+  $show(newTab);
+  $show(newSection);
   oldTab = newTab;
   oldSection = newSection;
 }); //
@@ -80,17 +75,13 @@ function $(element) {
 
 function $all(elements) {
   return document.querySelectorAll(elements);
-} // function $get(element) {
-//   return document.querySelector(element)
-// }
-
+}
 
 function $log(message) {
   console.log(message);
 }
 
 function $hide(element) {
-  element.style.display = 'none';
   element.classList.remove('active');
 }
 

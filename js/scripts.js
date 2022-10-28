@@ -3,13 +3,9 @@
   const header = $('header')  
   const headline = $('h1')  
   const nav = $('nav')
-  // const main = $('main')
   const blackness = $('#blackness')
-  // const tabs = $all('.tab')
-  // let newSection = 'welcome'
   
   let firstPage = 'welcome' ///
-
   let oldSection = $('.' + firstPage)
   let oldTab = $('#' + firstPage)
   oldTab.classList.add('active')
@@ -65,24 +61,17 @@
     let newTab = e.target
     let newSection = $('.' + newTab.id)
     
-    // newTab.style.color = 'green' //? -> or display = none/block
-    //? fade in?
-
-    
     // deactivate old section and tab
-    oldSection.classList.remove('active')
-    oldTab.classList.remove('active')
+    $hide(oldTab)
+    $hide(oldSection)
     
     // activate new section and tab
-    newTab.classList.add('active')
-    newSection.classList.add('active')
+    $show(newTab)
+    $show(newSection)
 
     oldTab = newTab
     oldSection = newSection
   })
-
-
-
 
 //
 //
@@ -96,16 +85,11 @@
     return document.querySelectorAll(elements)
   }
 
-  // function $get(element) {
-  //   return document.querySelector(element)
-  // }
-
   function $log(message) {
     console.log(message)
   }
 
   function $hide(element) {
-    element.style.display = 'none'
     element.classList.remove('active')
   }
 
