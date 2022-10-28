@@ -96,9 +96,9 @@
     return document.querySelectorAll(elements)
   }
 
-  function $get(element) {
-    return document.querySelector(element)
-  }
+  // function $get(element) {
+  //   return document.querySelector(element)
+  // }
 
   function $log(message) {
     console.log(message)
