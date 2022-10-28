@@ -10,8 +10,8 @@ var firstPage = 'welcome'; ///
 
 var oldSection = $('.' + firstPage);
 var oldTab = $('#' + firstPage);
-oldTab.classList.add('active');
-oldSection.classList.add('active'); //
+$show(oldTab);
+$show(oldSection); //
 //
 /// hero
 

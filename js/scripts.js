@@ -8,8 +8,8 @@
   let firstPage = 'welcome' ///
   let oldSection = $('.' + firstPage)
   let oldTab = $('#' + firstPage)
-  oldTab.classList.add('active')
-  oldSection.classList.add('active')
+  $show(oldTab)
+  $show(oldSection)
 
 //
 //
