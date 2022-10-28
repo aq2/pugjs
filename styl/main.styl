@@ -12,6 +12,11 @@
   $lightBrown = rgba($brown,0.9)
   $lightPink = rgba($pink,0.4)
 
+  #blackness
+    background black
+    position sticky
+    top 0
+    z-index 5
 
   body
     color white
@@ -27,17 +32,17 @@
     color black
     background $mustard
   
-  nav li
+  nav .tab
     // background 
 
-  nav li.active
+  nav .tab.active
     color black
     background white
 
   section
     color black
-    background white
-    // background lightness($mustard, 98%)
+    // background white
+    background lightness($mustard, 95)
 
 
   // layout colours
@@ -79,13 +84,19 @@
     position sticky
     top 0
     text-align right
+    z-index 5
+    border 1px solid blue
+    height 400px
+    transform-origin top right
+
+
 
   header img#hero
-    z-index 0
+    // z-index 0
     transition 0.5s
     height 400px
     transform-origin top right
-    animation-name opac
+    // animation-name opac
     animation-duration 2s
     animation-fill-mode forwards
 
@@ -96,7 +107,7 @@
     left 0
     z-index 12
     display inline
-    animation headingDown
+    // animation headingDown
     animation-duration 2s
     animation-fill-mode forwards
 
@@ -113,21 +124,20 @@
       top 100px
 
   nav
-    position relative
-    // top 200px
+    top 230px
     position sticky
-    top 245px
-    animation-name opac
+    // animation-name opac
     animation-duration 3s
     animation-fill-mode forwards
-
+    z-index 5
 
   main
     margin 0 auto
     position relative
-    z-index -99
+    // z-index -99
+    z-index 1
     // opacity 0
-    animation-name opac
+    // animation-name opac
     animation-duration 3s
     animation-fill-mode forwards
 
@@ -139,18 +149,35 @@
 
   section
     display none
-    flex-wrap wrap
-    padding 1rem 1rem
+    // flex-wrap wrap
+    padding 1rem 2rem
     justify-content space-between
     &.active
-      display flex
+      display inline-block
 
-  section > div
-    // flex-grow 1
-    // width 48%
-    border 2px solid red
-    // margin 0.5rem 1rem
-    // padding 0rem 1rem
+  
+  aside
+    display flex
+
+  .text
+    // border 1px solid red
+
+  .spacer
+    // background orange
+    min-width 3rem
+
+  .pic
+    // border 1px solid black
+    text-align right
+
+  .pic img
+    width 200px
+  
+  .pic a img
+    height 45px
+    width 45px
+    // text-align right
+    // border 1px solid red
 
   section .right
     text-align left
@@ -163,13 +190,13 @@
 //
 /// nav tabs
 
-  nav ul
+  nav
     display flex
     list-style-type none
     justify-content space-between
     flex-wrap wrap
 
-  nav li
+  nav .tab
     padding 1rem
     cursor pointer
     border 2px solid orange
@@ -181,24 +208,66 @@
   body
     font-family 'Mulish', sans-serif
   
-  h1, h2, h3, nav li
+  h1, h2, h3, .tab
     font-family 'Philosopher', sans-serif
 
   h1
     font-size 4rem
   
   h2
-    font-size 2rem
+    font-size 2.5rem
+    margin-bottom 0.5rem
 
   h3
     font-size 1.5rem
 
-  nav li
+  nav .tab
     font-size 2.5rem
     // font-weight bold
 
-  p
+  p, li
     font-size 1.5rem
+    line-height 1.4
+    margin-bottom 0.5rem
+
+  li
+    margin-bottom 0
+
+  ul
+    margin-left 15rem
+    margin-top -2.65rem
+    display inline-block
+
+
 
 //
 /// and more
+
+/// textimonial
+  blockquote
+    width 80%
+    position relative
+    border-radius 1rem
+    padding 0.25rem 1rem
+    margin 1rem auto 1.5rem auto
+    background alpha($mustard, 0.5)
+    border-left 15px solid $mustard
+
+  span.quote
+    left 1rem
+    top -0.5rem
+    font-size 7rem
+    position absolute
+    font-family sans-serif
+
+  q
+    border 1px solid red
+
+  .testimonial
+    margin-top 3rem
+    font-size 1.5rem
+    font-style italic
+    
+  .punter
+    text-align right
+    font-size 1.25rem

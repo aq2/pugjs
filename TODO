@@ -3,9 +3,12 @@
 
 Todo:
   ☐ netlify
-  ☐ padding on container, margin on content -> typog?
+  ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36)
   ☐ header img gallery slider/carousel
   ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
+  ☐ bigger side images
+  ✔ aint getting da clicks? @done(28-10-22 14:35)
+  ☐ z-indices?
 
 layout => structure of *blocks* - not _text_:
   ☐ scrolling still raggedy
@@ -15,6 +18,7 @@ layout => structure of *blocks* - not _text_:
   ✔ take out the om @done(28-10-22 12:04)
   ☐ bring back the om!
   ✘ header glow on scroll @cancelled(28-10-22 12:04)
+  ☐ does nav have to be a ul? what else?
 
 tabs to accordions:
   ☐ clickhandlers on tabs to toggle .active data id's?

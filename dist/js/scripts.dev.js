@@ -6,7 +6,8 @@ var header = $get('header');
 var headline = $get('h1');
 var nav = $get('nav');
 var main = $get('main');
-var strootch = $get('#strootch'); // let stretchHeight = hero.height
+var strootch = $get('#strootch');
+var blackness = $('#blackness'); // let stretchHeight = hero.height
 // let stretchHeight = hero.offsetHeight
 // let stretchWidth = hero.width
 // let headerHeight = hero.offsetHeight + nav.offsetHeight
@@ -43,12 +44,18 @@ function scroller() {
   // console.log(stretchHeight)
   // console.log(scaleFactor)
 
-  if (scaleFactor > 0.5) {
-    hero.style.transform = 'scale(' + scaleFactor + ')';
+  if (scaleFactor > 0.4) {
+    header.style.transform = 'scale(' + scaleFactor + ')'; // hero.style.transform = 'scale(' + scaleFactor + ')'
+
     headline.style.animation = 'headingUp';
     headline.style.animationDuration = '2s';
     headline.style.animationFillMode = 'forwards';
-  }
+  } // header.style.height = hero.offsetHeight + 'px'
+  // header.style.height = '100px'
+  // header.style.background = '#ccc'
+
+
+  blackness.style.height = '300px';
 } // window.onresize = function (e) {
 //   let stretchWidth = hero.width
 //   console.log(stretchWidth)
@@ -73,6 +80,10 @@ function scroller() {
 //
 /// aQuery
 
+
+function $(element) {
+  return document.querySelector(element);
+}
 
 function $all(elements) {
   return document.querySelectorAll(elements);

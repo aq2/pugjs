@@ -1,3 +1,9 @@
+#blackness {
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
 body {
   color: #fff;
   background: #000;
@@ -12,13 +18,13 @@ nav {
   color: #000;
   background: #bd900a;
 }
-nav li.active {
+nav .tab.active {
   color: #000;
   background: #fff;
 }
 section {
   color: #000;
-  background: #fff;
+  background: #fef8e7;
 }
 * {
   margin: 0;
@@ -33,13 +39,15 @@ header {
   position: sticky;
   top: 0;
   text-align: right;
+  z-index: 5;
+  border: 1px solid #00f;
+  height: 400px;
+  transform-origin: top right;
 }
 header img#hero {
-  z-index: 0;
   transition: 0.5s;
   height: 400px;
   transform-origin: top right;
-  animation-name: opac;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
@@ -49,37 +57,46 @@ header h1 {
   left: 0;
   z-index: 12;
   display: inline;
-  animation: headingDown;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 nav {
-  position: relative;
+  top: 230px;
   position: sticky;
-  top: 245px;
-  animation-name: opac;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  z-index: 5;
 }
 main {
   margin: 0 auto;
   position: relative;
-  z-index: -99;
-  animation-name: opac;
+  z-index: 1;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 section {
   display: none;
-  flex-wrap: wrap;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   justify-content: space-between;
 }
 section.active {
+  display: inline-block;
+}
+aside {
   display: flex;
 }
-section > div {
-  border: 2px solid #f00;
+.spacer {
+  min-width: 3rem;
+}
+.pic {
+  text-align: right;
+}
+.pic img {
+  width: 200px;
+}
+.pic a img {
+  height: 45px;
+  width: 45px;
 }
 section .right {
   text-align: left;
@@ -88,13 +105,13 @@ section .right {
 h2 {
   width: 100%;
 }
-nav ul {
+nav {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-nav li {
+nav .tab {
   padding: 1rem;
   cursor: pointer;
   border: 2px solid #ffa500;
@@ -107,23 +124,63 @@ body {
 h1,
 h2,
 h3,
-nav li {
+.tab {
   font-family: 'Philosopher', sans-serif;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 h3 {
   font-size: 1.5rem;
 }
-nav li {
+nav .tab {
   font-size: 2.5rem;
 }
-p {
+p,
+li {
   font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+li {
+  margin-bottom: 0;
+}
+ul {
+  margin-left: 15rem;
+  margin-top: -2.65rem;
+  display: inline-block;
+}
+blockquote {
+  width: 80%;
+  position: relative;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  margin: 1rem auto 1.5rem auto;
+  background: rgba(189,144,10,0.5);
+  border-left: 15px solid #bd900a;
+}
+span.quote {
+  left: 1rem;
+  top: -0.5rem;
+  font-size: 7rem;
+  position: absolute;
+  font-family: sans-serif;
+}
+q {
+  border: 1px solid #f00;
+}
+.testimonial {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.punter {
+  text-align: right;
+  font-size: 1.25rem;
 }
 @-moz-keyframes headingDown {
   0% {

@@ -5,6 +5,7 @@
   const nav = $get('nav')
   const main = $get('main')
   const strootch = $get('#strootch')
+  const blackness = $('#blackness')
 
   // let stretchHeight = hero.height
   // let stretchHeight = hero.offsetHeight
@@ -44,14 +45,20 @@
     // console.log(scrollTop)
     // console.log(stretchHeight)
     // console.log(scaleFactor)
-    if (scaleFactor > 0.5) {
-      hero.style.transform = 'scale(' + scaleFactor + ')'
+    if (scaleFactor > 0.4) {
+      header.style.transform = 'scale(' + scaleFactor + ')'
+      // hero.style.transform = 'scale(' + scaleFactor + ')'
+
       
       headline.style.animation = 'headingUp'
       headline.style.animationDuration = '2s'
       headline.style.animationFillMode ='forwards'
-    }
 
+    }
+    // header.style.height = hero.offsetHeight + 'px'
+    // header.style.height = '100px'
+    // header.style.background = '#ccc'
+    blackness.style.height = '300px'
 
     
   }
@@ -82,6 +89,10 @@
 
 //
 /// aQuery
+
+  function $(element) {
+    return document.querySelector(element)
+  }
 
   function $all(elements) {
     return document.querySelectorAll(elements)
