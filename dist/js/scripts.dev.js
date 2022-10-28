@@ -54,12 +54,13 @@ function scroller() {
 // }
 //
 //
-/// smerking tabs!
+/// smerking tabs! 🚬  so easy...eventually
 
 
 nav.addEventListener('click', function (e) {
   var newTab = e.target;
-  var newSection = $('.' + newTab.id); // newTab.style.color = 'green' /// -> or display = none/block
+  var newSection = $('.' + newTab.id); // newTab.style.color = 'green' //? -> or display = none/block
+  //? fade in?
   // deactivate old section and tab
 
   oldSection.classList.remove('active');
@@ -67,8 +68,8 @@ nav.addEventListener('click', function (e) {
 
   newTab.classList.add('active');
   newSection.classList.add('active');
-  oldSection = newSection;
   oldTab = newTab;
+  oldSection = newSection;
 }); //
 //
 /// aQuery

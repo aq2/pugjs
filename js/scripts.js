@@ -59,13 +59,15 @@
 
 //
 //
-/// smerking tabs!
+/// smerking tabs! 🚬  so easy...eventually
   
   nav.addEventListener('click', (e) => {
     let newTab = e.target
     let newSection = $('.' + newTab.id)
     
-    // newTab.style.color = 'green' /// -> or display = none/block
+    // newTab.style.color = 'green' //? -> or display = none/block
+    //? fade in?
+
     
     // deactivate old section and tab
     oldSection.classList.remove('active')
@@ -75,8 +77,8 @@
     newTab.classList.add('active')
     newSection.classList.add('active')
 
-    oldSection = newSection
     oldTab = newTab
+    oldSection = newSection
   })
 
 
