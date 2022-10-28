@@ -8,8 +8,10 @@ Todo:
   ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
 
 layout => structure of *blocks* - not _text_:
+  ☐ scrolling still raggedy
   ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
-  ☐ move title up on scroll
+  ✔ move title up on scroll @done(28-10-22 12:34)
+  ☐ recrop hero right-side!
   ✔ take out the om @done(28-10-22 12:04)
   ☐ bring back the om!
   ✘ header glow on scroll @cancelled(28-10-22 12:04)

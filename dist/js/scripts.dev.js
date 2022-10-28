@@ -31,6 +31,7 @@ var range = 'XXX';
 var timeout = false;
 
 window.onscroll = function (e) {
+  // todo only bother calling these if scrolltop not exceeded?
   clearTimeout(timeout);
   timeout = setTimeout(scroller, delay);
 };
@@ -40,16 +41,14 @@ function scroller() {
   var stretchHeight = hero.offsetHeight;
   var scaleFactor = (stretchHeight - scrollTop) / stretchHeight; // console.log(scrollTop)
   // console.log(stretchHeight)
-
-  console.log(scaleFactor); // todo maths nope 👇
+  // console.log(scaleFactor)
 
   if (scaleFactor > 0.5) {
     hero.style.transform = 'scale(' + scaleFactor + ')';
-  } // bring the nav up
-  // nav.style.top = '' + hero.height + 'px'
-  // nav.style.transform = 'translateY(10px)'
-  // nav.style.transform = 'translateY(' + hero.offsetHeight + 'px'
-
+    headline.style.animation = 'headingUp';
+    headline.style.animationDuration = '2s';
+    headline.style.animationFillMode = 'forwards';
+  }
 } // window.onresize = function (e) {
 //   let stretchWidth = hero.width
 //   console.log(stretchWidth)

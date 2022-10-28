@@ -78,71 +78,42 @@
   header
     position sticky
     top 0
-    border 4px solid blue
-    // display inline-block
-    // background lightblue
     text-align right
-
-
-  // header article
-  //   border 2px solid white
-  //   width 100%
-  //   // position absolute
-  //   // position relative
-
-  // #strootch
-  //   text-align right
-  //   border 1px dashed orange
-  //   height auto
-  //   // display inline-block
 
   header img#hero
-    border 2px solid green
-    // position absolute
-    // top -100px
-    // right 100%
-    // left 50%
-    // left 15%  // todo - why??
-    text-align right
     z-index 0
     transition 0.5s
     height 400px
-    // float right
     transform-origin top right
     animation-name opac
     animation-duration 2s
     animation-fill-mode forwards
 
-  header img#om
-    // border 2px solid green
-    z-index 1
-    position relative
-    top -326px
-    // top 100%
-    // left -75%
-    // right 75%
-    // top -200px
-
+  
   header h1
     position absolute
     top 150px
     left 0
-    // border 2px solid green
     z-index 12
     display inline
-    animation heading
-    animation-duration 3s
+    animation headingDown
+    animation-duration 2s
     animation-fill-mode forwards
 
-  @keyframes heading
+  @keyframes headingDown
     0%
       top -50px
     100%
       top 200px
 
+  @keyframes headingUp
+    0%
+      top 200px
+    100%
+      top 100px
 
   nav
-    // position relative
+    position relative
     // top 200px
     position sticky
     top 245px

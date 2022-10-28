@@ -32,6 +32,7 @@
   let range = 'XXX'
   let timeout = false
   window.onscroll = function (e) {
+    // todo only bother calling these if scrolltop not exceeded?
     clearTimeout(timeout)
     timeout = setTimeout(scroller, delay)
   }
@@ -42,16 +43,17 @@
     let scaleFactor =  (stretchHeight - scrollTop) / stretchHeight
     // console.log(scrollTop)
     // console.log(stretchHeight)
-    console.log(scaleFactor)
-    // todo maths nope 👇
+    // console.log(scaleFactor)
     if (scaleFactor > 0.5) {
       hero.style.transform = 'scale(' + scaleFactor + ')'
-    } 
+      
+      headline.style.animation = 'headingUp'
+      headline.style.animationDuration = '2s'
+      headline.style.animationFillMode ='forwards'
+    }
 
-    // bring the nav up
-    // nav.style.top = '' + hero.height + 'px'
-    // nav.style.transform = 'translateY(10px)'
-    // nav.style.transform = 'translateY(' + hero.offsetHeight + 'px'
+
+    
   }
 
   // window.onresize = function (e) {
