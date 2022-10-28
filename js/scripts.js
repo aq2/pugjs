@@ -1,34 +1,34 @@
-/// stretch
-  const stretch = $get('#stretch')
+/// hero
+  const hero = $get('#hero')
   const header = $get('header')  
   const headline = $get('h1')  
   const nav = $get('nav')
   const main = $get('main')
   const strootch = $get('#strootch')
 
-  // let stretchHeight = stretch.height
-  // let stretchHeight = stretch.offsetHeight
-  // let stretchWidth = stretch.width
-  // let headerHeight = stretch.offsetHeight + nav.offsetHeight
+  // let stretchHeight = hero.height
+  // let stretchHeight = hero.offsetHeight
+  // let stretchWidth = hero.width
+  // let headerHeight = hero.offsetHeight + nav.offsetHeight
   
-  init()
+  // init()
   function init() {
     // headline.style.transform = 'translateY(200px)'
     // nav.style.transform = 'translateY(436px)'
-    // console.log(stretch.offsetHeight)
-    // nav.style.transform = 'translateY(-' + stretch.offsetHeight +'px)'
+    // console.log(hero.offsetHeight)
+    // nav.style.transform = 'translateY(-' + hero.offsetHeight +'px)'
     // nav.style.transform = 'translateY(-' + 200 +'px)'
-    nav.style.transform = 'translateY(-' + stretch.offsetHeight +'px)'
+    nav.style.transform = 'translateY(-' + hero.offsetHeight +'px)'
     // main.style.transform = 'translateY(-' + nav.offsetHeight + 'px)'
-    // header.style.height = stretch.offsetHeight + nav.offsetHeight
-    header.style.height = stretch.offsetHeight + nav.offsetHeight + 'px'
+    // header.style.height = hero.offsetHeight + nav.offsetHeight
+    header.style.height = hero.offsetHeight + nav.offsetHeight + 'px'
     console.log(header.style.height)
-    strootch.style.height = 100 - stretch.offsetHeight + 'px'
+    strootch.style.height = 100 - hero.offsetHeight + 'px'
     // main.style.transform = 'translateY(' + -200 + 'px)'
   }
     
 
-  let delay = 150
+  let delay = 2
   let range = 'XXX'
   let timeout = false
   window.onscroll = function (e) {
@@ -38,17 +38,24 @@
 
   function scroller() {
     let scrollTop = document.documentElement.scrollTop
-    let stretchHeight = stretch.offsetHeight
-    let scaleFactor = (stretchHeight - scrollTop) / stretchHeight
+    let stretchHeight = hero.offsetHeight
+    let scaleFactor =  (stretchHeight - scrollTop) / stretchHeight
     // console.log(scrollTop)
     // console.log(stretchHeight)
-    // console.log(scaleFactor)
+    console.log(scaleFactor)
     // todo maths nope 👇
-    stretch.style.transform = 'scale(' + scaleFactor + ')'
+    if (scaleFactor > 0.5) {
+      hero.style.transform = 'scale(' + scaleFactor + ')'
+    } 
+
+    // bring the nav up
+    // nav.style.top = '' + hero.height + 'px'
+    // nav.style.transform = 'translateY(10px)'
+    // nav.style.transform = 'translateY(' + hero.offsetHeight + 'px'
   }
 
   // window.onresize = function (e) {
-  //   let stretchWidth = stretch.width
+  //   let stretchWidth = hero.width
   //   console.log(stretchWidth)
   // }
 

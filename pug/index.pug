@@ -4,22 +4,20 @@ html(lang="en")
     include includes/head.pug
   body
     header
-      //- article
-      #strootch
-        img#stretch(src='imgs/stretch.jpg')
+      img#hero(src='imgs/header.jpg')
       h1 Ayurvedic Yoga Massage
-      img#om(src='imgs/om.png')
+      //- img#om(src='imgs/om.png')
       
-      nav
-        ul
-          li.tab.active(rel='welcome') Welcome
-          li.tab(rel='treatments') Treatments
-          li.tab(rel='training') Massage Training
-          li.tab(rel='yoga') Yoga Classes
-          li.tab(rel='joyful') Joyful Living
-          li.tab(rel='dosha') Dosha Principles
-          li.tab(rel='gallery') Gallery
-          li.tab(rel='contact') Contact
+    nav
+      ul
+        li.tab.active(rel='welcome') Welcome
+        li.tab(rel='treatments') Treatments
+        li.tab(rel='training') Massage Training
+        li.tab(rel='yoga') Yoga Classes
+        li.tab(rel='joyful') Joyful Living
+        li.tab(rel='dosha') Dosha Principles
+        li.tab(rel='gallery') Gallery
+        li.tab(rel='contact') Contact
       
     main
       include includes/welcome.pug

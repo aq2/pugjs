@@ -2,23 +2,17 @@
 *blimey*
 
 Todo:
-  ✔ welcome -> include, then include it in index! - resave parent? @done(27-10-22 12:34)
-  ✔ could always resave parent => compile 😄 @done(27-10-22 12:34)
-  ✘ => - or just fold them? @cancelled(27-10-22 12:34)
-  ✔ extend aQuery => $hide() $show() etc @done(27-10-22 19:45)
   ☐ netlify
   ☐ padding on container, margin on content -> typog?
   ☐ header img gallery slider/carousel
-  ✔ position relative @done(27-10-22 19:44)
-  ☐ try ordering article elements, and adjust top
-
+  ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
 
 layout => structure of *blocks* - not _text_:
-  ☐ 💡 sticky shrinking header onscroll down!
-  ✘ gsap too much? we just want simple stuff for now! @cancelled(27-10-22 18:04)
-  ☐ om glow on scroll
-  ✔ eventhandling debounce throttling @done(27-10-22 19:13)
-
+  ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
+  ☐ move title up on scroll
+  ✔ take out the om @done(28-10-22 12:04)
+  ☐ bring back the om!
+  ✘ header glow on scroll @cancelled(28-10-22 12:04)
 
 tabs to accordions:
   ☐ clickhandlers on tabs to toggle .active data id's?
@@ -26,18 +20,23 @@ tabs to accordions:
     ☐ do we _even_ need?
     ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
 
-
 meeja queeries:
-  ✘ h1 positioning and sizing! top left @cancelled(27-10-22 19:46)
 
 setup and config:
-  ✔ don't use imports in stylus, coz parent-save annoyance - just fold... @done(27-10-22 12:33)
-  ✘ use separate style and css files - no compile needed @cancelled(27-10-22 12:34)
-
 
 ================================================
 
 Archive:
+  ✔ position relative @done(27-10-22 19:44) @project(Todo)
+  ✘ gsap too much? we just want simple stuff for now! @cancelled(27-10-22 18:04) @project(layout => structure of *blocks* - not _text_)
+  ✔ eventhandling debounce throttling @done(27-10-22 19:13) @project(layout => structure of *blocks* - not _text_)
+  ✘ h1 positioning and sizing! top left @cancelled(27-10-22 19:46) @project(meeja queeries)
+  ✔ welcome -> include, then include it in index! - resave parent? @done(27-10-22 12:34) @project(Todo)
+  ✔ could always resave parent => compile 😄 @done(27-10-22 12:34) @project(Todo)
+  ✘ => - or just fold them? @cancelled(27-10-22 12:34) @project(Todo)
+  ✔ extend aQuery => $hide() $show() etc @done(27-10-22 19:45) @project(Todo)
+  ✔ don't use imports in stylus, coz parent-save annoyance - just fold... @done(27-10-22 12:33) @project(setup and config)
+  ✘ use separate style and css files - no compile needed @cancelled(27-10-22 12:34) @project(setup and config)
   ✔ add aQuery from imogen @done(26-10-22 18:55) @project(Todo)
   ✔ semantic tags -> section @done(26-10-22 19:00) @project(layout)
   ✔ flexy nav @done(26-10-22 17:06) @project(layout)
