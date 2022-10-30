@@ -15,7 +15,7 @@ Todo:
 scroller:
   ☐ scrolling still raggedy
   ☐ fuck scrolling - just start it small in first place!
-  ☐ 💩 blackness -> have a black header, and put hero/headline in a div inside header...
+  ✔ 💩 blackness -> have a black header, and put hero/headline in a div inside header... @done(30-10-22 17:57)
 
 //
 
