@@ -11,12 +11,14 @@ Todo:
   ✔ back to pug includes? needs the old 1,2, but neater code! @done(30-10-22 16:26)
 
 //
+
 scroller:
   ☐ scrolling still raggedy
   ☐ fuck scrolling - just start it small in first place!
   ☐ 💩 blackness -> have a black header, and put hero/headline in a div inside header...
 
-//  
+//
+
 meeja queeries:
   ☐ portrait mode accordion!
     ☐ do we _even_ need?
@@ -24,9 +26,12 @@ meeja queeries:
   
 
 //
+
 firestore:
+  ✔ get it working! - clap yourself on the back 😺 @done(30-10-22 17:24)
   ☐ data structures for workshops?
   ☐ get simple CRUD
+    ✔ await @done(30-10-22 17:21)
     ☐ create
     ✔ read @done(30-10-22 15:52)
     ☐ update
@@ -34,9 +39,9 @@ firestore:
     ☐ for workshops
     
     
-    //
+//
 one day:
-  ☐ for timetrade
+  ☐ do timetrade substitute
   ✔ 💡 timetrade?? => needs db -> netlify, firebase? @done(30-10-22 15:52)
   ☐ netlify -> namecheap? -< 👋 vidahost
   ☐ header img gallery slider/carousel
