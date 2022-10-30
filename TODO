@@ -21,15 +21,19 @@ meeja queeries:
   
 
 //
-dbase:
-  ☐ firestore
-    ☐ for timetrade
+firestore:
+  ☐ get simple CRUD
+    ☐ create
+    ✔ read @done(30-10-22 15:52)
+    ☐ update
+    ☐ delete  
     ☐ for workshops
-
-
-//
+    
+    
+    //
 one day:
-  ☐ 💡 timetrade?? => needs db -> netlify, firebase?
+  ☐ for timetrade
+  ✔ 💡 timetrade?? => needs db -> netlify, firebase? @done(30-10-22 15:52)
   ☐ netlify -> namecheap? -< 👋 vidahost
   ☐ header img gallery slider/carousel
   ☐ fancier intro animations?
