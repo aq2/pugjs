@@ -20,48 +20,9 @@
       <div class="detailAge"></div>
       <p>email</p>
       <div class="detailEmail"></div>
+      <button id="getData">get Data!</button>
     </div>
   </body>
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
-    const firebaseConfig = {
-      apiKey: "AIzaSyA8iNFJmvZUymc2nybinXIX7CQCVQ1XYpc",
-      authDomain: "pugjs-1dd3d.firebaseapp.com",
-      projectId: "pugjs-1dd3d",
-      storageBucket: "pugjs-1dd3d.appspot.com",
-      messagingSenderId: "869334856470",
-      appId: "1:869334856470:web:030887cfe7e660188b1637"
-    }
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app)
-    
-    console.log(db)
-    
-    //- const dbRef = firebase.database().ref();
-    //- const usersRef = dbRef.child('users');
-    
-    //- const userListUI = document.getElementById("userList");
-    //- usersRef.on("child_added", snap => {
-    //-     let user = snap.val();
-    //-     let $li = document.createElement("li");
-    //-     $li.innerHTML = user.name;
-    //-     $li.setAttribute("child-key", snap.key);
-    //-     $li.addEventListener("click", userClicked)
-    //-     userListUI.append($li)
-    //- });
-    
-    
-    //- function userClicked(e) {
-    //-   var userID = e.target.getAttribute("child-key");
-    //-   const userRef = dbRef.child('users/' + userID);
-    //-   const userDetailUI = document.getElementById("userDetail");
-    //-   userDetailUI.innerHTML = ""
-    //-   userRef.on("child_added", snap => {
-    //-       var $p = document.createElement("p");
-    //-       $p.innerHTML = snap.key + " - " + snap.val()
-    //-       userDetailUI.append($p);
-    //-   });
-    //- }
-  </script>
+  <script type="module" src="js/fireInit.js"></script>
+  <script src="js/play2.js"></script>
 </html>

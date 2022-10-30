@@ -7,4 +7,5 @@
   "compile-hero.typescriptx-output-toggle": false,
   "compile-hero.ignore": "*/includes/*",
   "liveServer.settings.root": "dist/",
+  "compile-hero.javascript-output-toggle": false,
 }
