@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="Ayurvedic Yoga Massage and Workshops in Devon"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Philosopher:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Ayurvedic Yoga Massage in Devon</title>
+  </head>
+  <body>
+    <h1>firebase CRUD</h1>
+    <ul id="userList"></ul>
+    <div id="userDetail">
+      <p>name</p>
+      <div class="detailName"></div>
+      <p>age</p>
+      <div class="detailAge"></div>
+      <p>email</p>
+      <div class="detailEmail"></div>
+    </div>
+  </body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA8iNFJmvZUymc2nybinXIX7CQCVQ1XYpc",
+      authDomain: "pugjs-1dd3d.firebaseapp.com",
+      projectId: "pugjs-1dd3d",
+      storageBucket: "pugjs-1dd3d.appspot.com",
+      messagingSenderId: "869334856470",
+      appId: "1:869334856470:web:030887cfe7e660188b1637"
+    }
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app)
+    
+    console.log(db)
+    
+    //- const dbRef = firebase.database().ref();
+    //- const usersRef = dbRef.child('users');
+    
+    //- const userListUI = document.getElementById("userList");
+    //- usersRef.on("child_added", snap => {
+    //-     let user = snap.val();
+    //-     let $li = document.createElement("li");
+    //-     $li.innerHTML = user.name;
+    //-     $li.setAttribute("child-key", snap.key);
+    //-     $li.addEventListener("click", userClicked)
+    //-     userListUI.append($li)
+    //- });
+    
+    
+    //- function userClicked(e) {
+    //-   var userID = e.target.getAttribute("child-key");
+    //-   const userRef = dbRef.child('users/' + userID);
+    //-   const userDetailUI = document.getElementById("userDetail");
+    //-   userDetailUI.innerHTML = ""
+    //-   userRef.on("child_added", snap => {
+    //-       var $p = document.createElement("p");
+    //-       $p.innerHTML = snap.key + " - " + snap.val()
+    //-       userDetailUI.append($p);
+    //-   });
+    //- }
+  </script>
+</html>

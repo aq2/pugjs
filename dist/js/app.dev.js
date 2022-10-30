@@ -1,6 +1,6 @@
 "use strict";
 
-var firstPage = 'treatments'; //?
+var firstPage = 'training'; //?
 /// init
 
 var hero = $('#hero');

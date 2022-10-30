@@ -5,57 +5,60 @@ Todo:
   ☐ treatments layout
   ☐ button hover transitions
   ☐ icons on buttons
-  ✔ intro animations @done(28-10-22 20:12)
-  ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36)
-  ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05)
-  ✔ aint getting da clicks? @done(28-10-22 14:35)
-  ✔ z-indices? @done(28-10-22 16:29)
-  ✔ no moar includes -> no 'compiling one-two' @done(28-10-22 19:36)
-  ✔ favicon @done(28-10-22 20:10)
-  ✔ call it 'app.js', like a proper _dev_ @done(28-10-22 20:11)
-  ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55)
-
+  ☐ update massage training sessions
+  ☐ workshop/training modal
 
 //
 scroller:
   ☐ scrolling still raggedy
   ☐ fuck scrolling - just start it small in first place!
-  ✔ 💩 clunky 'blackness' div @done(28-10-22 20:11)
-  ✔ recrop hero right-side! @done(28-10-22 18:35)
-  ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05)
-  ✔ move title up on scroll @done(28-10-22 12:34)
-  ✔ take out the om @done(28-10-22 12:04)
-  ✘ header glow on scroll @cancelled(28-10-22 12:04)
-  
-
-//
-tabs:
-  ✔ get 'em working @done(28-10-22 20:15)
-  ✔ 💡 use same id/class name => 😺💡 @done(28-10-22 23:59)
-  ✔ 💡 fade-ins @done(28-10-22 20:15)
-  ✔ why the shift when switching tab? -> scrollbar appears! @done(28-10-22 16:22)
-  ✔ going to have to chose initial tab @done(28-10-22 16:19)
-  ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55)
-
 
 //  
 meeja queeries:
   ☐ portrait mode accordion!
     ☐ do we _even_ need?
     ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+  
+
+//
+dbase:
+  ☐ firestore
+    ☐ for timetrade
+    ☐ for workshops
+
 
 //
 one day:
+  ☐ 💡 timetrade?? => needs db -> netlify, firebase?
   ☐ netlify -> namecheap? -< 👋 vidahost
   ☐ header img gallery slider/carousel
-  ☐ 💡 timetrade??
   ☐ fancier intro animations?
   ☐ bring back the om!
-
 
 ================================================
 
 Archive:
+  ✔ 💡 use same id/class name => 😺💡 @done(28-10-22 23:59) @project(tabs)
+  ✔ 💡 fade-ins @done(28-10-22 20:15) @project(tabs)
+  ✔ intro animations @done(28-10-22 20:12) @project(Todo)
+  ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36) @project(Todo)
+  ✔ favicon @done(28-10-22 20:10) @project(Todo)
+  ✔ call it 'app.js', like a proper _dev_ @done(28-10-22 20:11) @project(Todo)
+  ✔ recrop hero right-side! @done(28-10-22 18:35) @project(scroller)
+  ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05) @project(scroller)
+  ✔ z-indices? @done(28-10-22 16:29) @project(Todo)
+  ✔ no moar includes -> no 'compiling one-two' @done(28-10-22 19:36) @project(Todo)
+  ✔ why the shift when switching tab? -> scrollbar appears! @done(28-10-22 16:22) @project(tabs)
+  ✔ going to have to chose initial tab @done(28-10-22 16:19) @project(tabs)
+  ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55) @project(Todo)
+  ✔ 💩 clunky 'blackness' div @done(28-10-22 20:11) @project(scroller)
+  ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55) @project(tabs)
+  ✔ move title up on scroll @done(28-10-22 12:34) @project(scroller)
+  ✔ take out the om @done(28-10-22 12:04) @project(scroller)
+  ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05) @project(Todo)
+  ✔ aint getting da clicks? @done(28-10-22 14:35) @project(Todo)
+  ✘ header glow on scroll @cancelled(28-10-22 12:04) @project(scroller)
+  ✔ get 'em working @done(28-10-22 20:15) @project(tabs)
   ✔ position relative @done(27-10-22 19:44) @project(Todo)
   ✘ gsap too much? we just want simple stuff for now! @cancelled(27-10-22 18:04) @project(layout => structure of *blocks* - not _text_)
   ✔ eventhandling debounce throttling @done(27-10-22 19:13) @project(layout => structure of *blocks* - not _text_)
