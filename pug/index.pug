@@ -20,10 +20,14 @@ html(lang="en")
       .tab#contact Contact
       
     main
-      include includes/welcome.pug
-      include includes/treatments.pug
-      include includes/training.pug
-      //- include includes/yoga.pug
+      section.welcome
+        include includes/welcome.pug
+      section.treatments
+        include includes/treatments.pug
+      section.training
+        include includes/training.pug
+      //- section.yoga
+        include includes/yoga.pug
       //- include includes/gallery.pug
       //- include includes/contact.pug
       //- joyful
