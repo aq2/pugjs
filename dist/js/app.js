@@ -1,4 +1,4 @@
-let firstPage = 'training' //?
+let firstPage = 'welcome' //?
 /// init
   
   const hero = $('#hero')
