@@ -2,6 +2,8 @@ doctype html
 html(lang="en")
   head
     include includes/head.pug
+    script(type="module" src='js/crud.js')
+
   body
     h1 firebase CRUD
     ul#userList
@@ -14,5 +16,6 @@ html(lang="en")
       .detailEmail
       button#getData get Data!
   
-  script(type="module" src='js/crud.js')
+  //- script(type="module" src='js/crud.js')
+  script(src='js/try.js')
   
