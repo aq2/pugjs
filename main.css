@@ -9,11 +9,8 @@ header h1 {
   color: #fef8e7;
 }
 nav {
-  color: #000;
-  background: #bd900a;
-}
-nav .tab {
   color: #072966;
+  background: #bd900a;
 }
 nav .tab.active {
   color: #000;
