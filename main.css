@@ -27,16 +27,12 @@ section {
 }
 body {
   margin: 0 auto;
-  overflow-y: scroll;
-  display: flex;
 }
 aside {
   width: 25%;
-  position: sticky;
-  top: 0;
 }
 main {
-  width: 75%;
+  display: flex;
 }
 aside img {
   width: 100%;
@@ -45,17 +41,20 @@ header {
   display: flex;
   padding: 1rem;
   align-items: center;
+  justify-content: center;
 }
 header h1 {
   margin: 0 auto;
+  text-align: center;
 }
 header img {
   max-height: 150px;
+  margin: 0 5rem;
 }
 nav {
   top: 0px;
-  z-index: 5;
   position: sticky;
+  z-index: 5;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -65,6 +64,7 @@ section {
   padding: 1rem 2rem;
   transition: opacity 2s;
   justify-content: space-between;
+  width: 75%;
 }
 section.active {
   animation-name: opac;

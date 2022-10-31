@@ -56,3 +56,4 @@ querySnapshot.forEach((doc) => {
 
 // await sync
 console.log('lastly', allShops)
+// we need to export this

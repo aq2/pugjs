@@ -13,10 +13,11 @@ Todo:
   ☐ learn modules import/export malarkey
   ☐ studios collection lookup or whatever
   ☐ email
-  ☐ radical redesign
+  ✔ radical redesign @done(31-10-22 11:46)
+  ✔ tweak radical @done(31-10-22 11:47)
+
 
 //
-
 scroller:
   ✔ position section on switch @done(31-10-22 11:14)
   ☐ scrolling still raggedy

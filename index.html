@@ -11,20 +11,20 @@
     <title>Ayurvedic Yoga Massage in Devon</title>
   </head>
   <body>
-    <aside><img src="imgs/gall/gal1.jpg"><img src="imgs/gall/gal2.jpg"></aside>
+    <header><img src="imgs/om.png">
+      <h1>Ayurvedic Yoga Massage</h1><img src="imgs/om.png">
+    </header>
+    <nav>
+      <div class="tab" id="welcome">Welcome</div>
+      <div class="tab" id="treatments">Treatments</div>
+      <div class="tab" id="training">Massage Training</div>
+      <div class="tab" id="yoga">Yoga Classes</div>
+      <div class="tab" id="joyful">Joyful Living</div>
+      <div class="tab" id="dosha">Dosha Principles</div>
+      <div class="tab" id="contact">Contact</div>
+    </nav>
     <main>
-      <header>
-        <h1>Ayurvedic Yoga Massage</h1><img src="imgs/om.png">
-      </header>
-      <nav>
-        <div class="tab" id="welcome">Welcome</div>
-        <div class="tab" id="treatments">Treatments</div>
-        <div class="tab" id="training">Massage Training</div>
-        <div class="tab" id="yoga">Yoga Classes</div>
-        <div class="tab" id="joyful">Joyful Living</div>
-        <div class="tab" id="dosha">Dosha Principles</div>
-        <div class="tab" id="contact">Contact</div>
-      </nav>
+      <aside><img src="imgs/gall/gal1.jpg"><img src="imgs/gall/gal2.jpg"></aside>
       <section class="welcome">
         <h2>What is Ayurvedic Yoga Massage?</h2>
         <article>
@@ -232,128 +232,12 @@
           </div>
         </article>
       </section>
-      <section class="yoga">
-        <h3 class="accordion_heading" rel="yoga">Yoga Classes</h3>
-        <div class="tab_content" id="yoga">
-          <div>
-            <h2>Sivananda Yoga</h2>
-            <div class="left50">
-              <p>
-                Sivananda Yoga is a classical and holistic approach to Hatha Yoga that stretches and tones
-                the whole body.
-              </p>
-              <p>
-                This style of yoga has not been modified or watered down. The teachings have survived intact
-                and are practiced as originally presented in India by Swami Sivananda in 1936. Sivananda Yoga
-                is an international practice which follows the same format worldwide.
-              </p>
-              <p>
-                Sivananda Yoga is a complete healing system designed to help the body maintain a natural
-                healthy state. It was developed by Vishnu-Devananda who wrote one of the contemporary Yoga
-                classics, <i>The Complete Illustrated Book of Yoga</i>, first published in 1960 and still one
-                of the best introductions to yoga available.
-                
-              </p>
-            </div>
-            <div class="right50">
-              <p>Sivananda training involves frequent relaxation and emphasizes full, yogic breathing.</p>
-              <p>Five principles of yoga - by Swami Vishnu-Devananda</p>
-              <ul>
-                <li>Proper Exercise – Asanas (steady poses)</li>
-                <li>Proper Breathing – Pranayama (prana, or vital energy)</li>
-                <li>Proper Relaxation – Savasana (pose for maximum relaxation)</li>
-                <li>Proper Diet – Vegetarian (lacto or vegan)</li>
-                <li>Meditation and Prayer – Dhyana and Vedanta (True Knowledge)</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h2>Sivananda Yoga Classes</h2>
-            <div class="left50">
-              <h4>Weekly Yoga classes - return of Live Classes!</h4>
-              <p>I now run both 'real live' and online weekly yoga classes.</p>
-              <p>Live classes are at the Feoffee Centre, Ottery St Mary on Thursdays, starting from September 2022.</p>
-              <p>Online classes on Tuesdays, via Zoom.</p>
-              <p>All are welcome, at any level of experience. Come along and try two free sessions with no commitment!</p>
-              <p>If you want to try free sessions, please <a href='mailto:saghar@ayurvedicyogamassage.org.uk'>email me for Zoom login details</a>.</p>
-              <table class="wide">
-                <thead class="thead">
-                  <tr>
-                    <th class="thead" colspan="2">Online Yoga classes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Tuesdays, online 5-6pm</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="wide">
-                <thead class="thead">
-                  <tr>
-                    <th class="thead" colspan="2">Live Yoga classes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Ottery St Mary,<br>Feoffee centre,<br>Brook Street</td>
-                    <td>Thursdays,<br>5.30 - 6.30pm</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Prices</h4>
-              <p>Single Class £8 each (hourly session)</p>
-              <p>Monthly payment £30</p>
-              <!-- p Monthly payment £30 plus 10% discount on all workshops!-->
-              <form method="post" action="./../../php/processYogaClassesForm.php" onsubmit="return validate(this)">
-                <p>To pay for yoga classes, please fill out the following form, and I'll get back to you as soon as I can with Zoom login details.</p>
-                <fieldset>
-                  <p>Your details</p>
-                  <div>
-                    <input class="name" type="text" name="name" placeholder="Your name" autocomplete="off" required autofocus>
-                  </div>
-                  <div>
-                    <input class="tel" type="tel" name="tel" placeholder="Your phone number" autocomplete="off" required>
-                  </div>
-                  <div>
-                    <input class="email" type="email" name="email" placeholder="Your email address" required>
-                  </div>
-                  <div>
-                    <select class="tickets" name="tickets" required>
-                      <option value="single_class">Single class: &nbsp;&pound;8</option>
-                      <option value="monthly_class">Month of classes: &nbsp;&pound;30</option>
-                    </select>
-                  </div>
-                  <div>
-                    <input class="website" type="text" name="website" autocomplete="off">
-                  </div>
-                  <div>
-                    <input name="subject" type="hidden" value="yoga class">
-                    <input type="submit" value="Continue to PayPal" name="submit">
-                  </div>
-                </fieldset>
-              </form>
-              <script src="../../js/validators.js"></script>
-              <script>
-                function validate(form) {
-                  let failMessage = validateName(form.name.value)
-                                  + validatePhone(form.tel.value)
-                                  + validateEmail(form.email.value)
-                
-                  return check4fail(failMessage)
-                }
-                
-              </script>
-            </div>
-            <div class="right50"></div>
-          </div>
-        </div>
-      </section>
+      <section class="yoga"></section>
       <section class="joyful"></section>
       <section class="contact"></section>
       <section class="dosha"></section>
     </main>
   </body>
   <!--/       -->
-  <script src="js/app.js"></script>
+  <script src="js/app.js" type="module"></script>
 </html>

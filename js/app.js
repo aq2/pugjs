@@ -1,32 +1,20 @@
 let firstPage = 'welcome' //?
+
 /// init
-  
-  const hero = $('#hero')
-  const header = $('header')  
-  const headline = $('h1')  
-  const nav = $('nav')
-  
-  let oldSection = $('.' + firstPage)
+  import {number, hey} from './mod.js'
+  import {$, $all, $log, $hide, $show} from './aQuery.js'
+
   let oldTab = $('#' + firstPage)
+  let oldSection = $('.' + firstPage)
   $show(oldTab)
   $show(oldSection)
 
-//
-//
-/// hero
-  
-  let delay = 2
-  let range = 'XXX'
-  let timeout = false
-  // window.onscroll = function (e) {
-  //   // todo only bother calling these if scrolltop not exceeded?
-  //   clearTimeout(timeout)
-  //   timeout = setTimeout(scroller, delay)
-  // }
 
 //
 //
+
 /// smerking tabs! 🚬  so easy...eventually
+  const nav = $('nav')
   
   nav.addEventListener('click', (e) => {
     let newTab = e.target
@@ -48,26 +36,3 @@ let firstPage = 'welcome' //?
 
 //
 //
-/// aQuery
-
-  function $(element) {
-    return document.querySelector(element)
-  }
-
-  function $all(elements) {
-    return document.querySelectorAll(elements)
-  }
-
-  function $log(message) {
-    console.log(message)
-  }
-
-  function $hide(element) {
-    element.classList.remove('active')
-  }
-
-  function $show(element) {
-    element.classList.add('active')
-  }
-
-//end aQuery
