@@ -73,44 +73,19 @@
   
   body
     margin 0 auto
-    // max-width 1360px
+    max-width 1360px
     overflow-y scroll
-    display flex
-    // flex-grow grow
   
-  aside
-    // border 2px solid blue
-    width 25%
-    position sticky
-    top 0
-    // overflow clip 
-    // flex-grow 1
-
-  .content
-    // flex-grow 4
-    // border 2px dashed orange
-    // min-width 90%
-    width 75%
-
-  aside img
-    // top 0
-    // z-index 5
-    // height 400px
-    // position sticky
-    width 100%
-    // text-align right
-  
-  // #sprites
-    // transform-origin top right
-    
   header
-    display flex
-    padding 1rem 
-
-  header h1
-    text-align center
-    // display inline-block
-    margin 1rem auto
+    top 0
+    z-index 5
+    height 400px
+    position sticky
+    text-align right
+  
+  #sprites
+    transform-origin top right
+    
 
   header img#hero
     height 400px
@@ -120,7 +95,7 @@
     transform-origin top right
     animation-fill-mode forwards
   
-  header oldh1
+  header h1
     left 0
     top 150px
     z-index 12
@@ -129,8 +104,6 @@
     animation-duration 2s
     // animation headingDown
     animation-fill-mode forwards
-
-
 
   @keyframes headingDown
     0%
@@ -145,7 +118,7 @@
       top 100px
 
   nav
-    top 0px
+    top 210px
     z-index 5
     position sticky
     animation-duration 3s
@@ -178,7 +151,7 @@
       animation-duration 1s
       animation-fill-mode forwards
   
-  article
+  aside
     display flex
     margin-bottom 1rem
 

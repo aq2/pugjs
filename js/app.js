@@ -20,11 +20,11 @@ let firstPage = 'welcome' //?
   let delay = 2
   let range = 'XXX'
   let timeout = false
-  window.onscroll = function (e) {
-    // todo only bother calling these if scrolltop not exceeded?
-    clearTimeout(timeout)
-    timeout = setTimeout(scroller, delay)
-  }
+  // window.onscroll = function (e) {
+  //   // todo only bother calling these if scrolltop not exceeded?
+  //   clearTimeout(timeout)
+  //   timeout = setTimeout(scroller, delay)
+  // }
 
   // todo - CLUNKY! 💩
   function scroller() {
