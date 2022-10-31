@@ -35,7 +35,7 @@ aside {
   position: sticky;
   top: 0;
 }
-.content {
+main {
   width: 75%;
 }
 aside img {
@@ -44,38 +44,18 @@ aside img {
 header {
   display: flex;
   padding: 1rem;
+  align-items: center;
 }
 header h1 {
-  text-align: center;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
-header img#hero {
-  height: 400px;
-  transition: 0.5s;
-  animation-duration: 2s;
-  transform-origin: top right;
-  animation-fill-mode: forwards;
-}
-header oldh1 {
-  left: 0;
-  top: 150px;
-  z-index: 12;
-  display: inline;
-  position: absolute;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+header img {
+  max-height: 150px;
 }
 nav {
   top: 0px;
   z-index: 5;
   position: sticky;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-main {
-  z-index: 1;
-  margin: 0 auto;
-  position: relative;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -128,7 +108,6 @@ button {
 nav {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   justify-content: space-between;
 }
 nav .tab {

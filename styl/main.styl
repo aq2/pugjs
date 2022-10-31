@@ -79,58 +79,28 @@
     // flex-grow grow
   
   aside
-    // border 2px solid blue
     width 25%
     position sticky
     top 0
-    // overflow clip 
-    // flex-grow 1
 
-  .content
-    // flex-grow 4
-    // border 2px dashed orange
-    // min-width 90%
+  main
     width 75%
 
   aside img
     // top 0
-    // z-index 5
-    // height 400px
     // position sticky
     width 100%
-    // text-align right
   
-  // #sprites
-    // transform-origin top right
-    
   header
     display flex
-    padding 1rem 
+    padding 1rem
+    align-items center
 
   header h1
-    text-align center
-    // display inline-block
-    margin 1rem auto
+    margin 0 auto
 
-  header img#hero
-    height 400px
-    transition 0.5s
-    // animation-name opac
-    animation-duration 2s
-    transform-origin top right
-    animation-fill-mode forwards
-  
-  header oldh1
-    left 0
-    top 150px
-    z-index 12
-    display inline
-    position absolute
-    animation-duration 2s
-    // animation headingDown
-    animation-fill-mode forwards
-
-
+  header img
+    max-height 150px
 
   @keyframes headingDown
     0%
@@ -152,13 +122,10 @@
     // animation-name opac
     animation-fill-mode forwards
 
-  main
-    z-index 1
-    margin 0 auto
-    position relative
-    // animation-name opac
-    animation-duration 3s
-    animation-fill-mode forwards
+  // main
+  //   // animation-name opac
+  //   animation-duration 3s
+  //   animation-fill-mode forwards
 
   @keyframes opac
     0% 
@@ -219,7 +186,6 @@
   nav
     display flex
     flex-wrap wrap
-    list-style-type none
     justify-content space-between
 
   nav .tab

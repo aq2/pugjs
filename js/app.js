@@ -5,8 +5,6 @@ let firstPage = 'welcome' //?
   const header = $('header')  
   const headline = $('h1')  
   const nav = $('nav')
-  // const blackness = $('#blackness')
-  const sprites = $('#sprites')
   
   let oldSection = $('.' + firstPage)
   let oldTab = $('#' + firstPage)
@@ -26,34 +24,6 @@ let firstPage = 'welcome' //?
   //   timeout = setTimeout(scroller, delay)
   // }
 
-  // todo - CLUNKY! 💩
-  function scroller() {
-    let scrollTop = document.documentElement.scrollTop
-    let stretchHeight = hero.offsetHeight
-    let scaleFactor =  (stretchHeight - scrollTop) / stretchHeight
-    // console.log(scrollTop)
-    // console.log(stretchHeight)
-    // console.log(scaleFactor)
-    if (scaleFactor > 0.4) {
-      // header.style.transform = 'scale(' + scaleFactor + ')'
-      sprites.style.transform = 'scale(' + scaleFactor + ')'
-      // hero.style.transform = 'scale(' + scaleFactor + ')'
-      
-      headline.style.animation = 'headingUp'
-      headline.style.animationDuration = '2s'
-      headline.style.animationFillMode ='forwards'
-    }
-    // header.style.height = hero.offsetHeight + 'px'
-    // blackness.style.height = '300px'    
-    header.style.height = '300px'    
-  }
-
-  // window.onresize = function (e) {
-  //   let stretchWidth = hero.width
-  //   console.log(stretchWidth)
-  // }
-
-
 //
 //
 /// smerking tabs! 🚬  so easy...eventually
@@ -72,6 +42,8 @@ let firstPage = 'welcome' //?
 
     oldTab = newTab
     oldSection = newSection
+
+    // todo position the section? scroll upo or whateva
   })
 
 //
