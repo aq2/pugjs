@@ -73,37 +73,34 @@
   
   body
     margin 0 auto
-    max-width 1360px
+    // max-width 1360px
     overflow-y scroll
+    display flex
+    // flex-grow grow
+  
+  aside
+    width 25%
+    position sticky
+    top 0
+
+  main
+    width 75%
+
+  aside img
+    // top 0
+    // position sticky
+    width 100%
   
   header
-    top 0
-    z-index 5
-    height 400px
-    position sticky
-    text-align right
-  
-  #sprites
-    transform-origin top right
-    
+    display flex
+    padding 1rem
+    align-items center
 
-  header img#hero
-    height 400px
-    transition 0.5s
-    // animation-name opac
-    animation-duration 2s
-    transform-origin top right
-    animation-fill-mode forwards
-  
   header h1
-    left 0
-    top 150px
-    z-index 12
-    display inline
-    position absolute
-    animation-duration 2s
-    // animation headingDown
-    animation-fill-mode forwards
+    margin 0 auto
+
+  header img
+    max-height 150px
 
   @keyframes headingDown
     0%
@@ -118,20 +115,17 @@
       top 100px
 
   nav
-    top 210px
+    top 0px
     z-index 5
     position sticky
     animation-duration 3s
     // animation-name opac
     animation-fill-mode forwards
 
-  main
-    z-index 1
-    margin 0 auto
-    position relative
-    // animation-name opac
-    animation-duration 3s
-    animation-fill-mode forwards
+  // main
+  //   // animation-name opac
+  //   animation-duration 3s
+  //   animation-fill-mode forwards
 
   @keyframes opac
     0% 
@@ -151,7 +145,7 @@
       animation-duration 1s
       animation-fill-mode forwards
   
-  aside
+  article
     display flex
     margin-bottom 1rem
 
@@ -192,7 +186,6 @@
   nav
     display flex
     flex-wrap wrap
-    list-style-type none
     justify-content space-between
 
   nav .tab
