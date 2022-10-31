@@ -9,7 +9,7 @@ Todo:
   ☐ update massage training sessions
   ☐ workshop/training modal
   ✔ 💡 firepughar compile structure! @done(31-10-22 11:13)
-  ☐ hide firebase config??
+  ✘ hide firebase config?? @cancelled(31-10-22 13:11)
   ✔ learn modules import/export malarkey @done(31-10-22 12:42)
   ☐ studios collection lookup or whatever
   ☐ email
@@ -35,7 +35,10 @@ meeja queeries:
 //
 
 firestore:
+  ☐ backend for lots of things!
+    ☐ add workshops
   ☐ data structures for workshops?
+  ☐ get all collections.js
   ☐ get simple CRUD
     ☐ create
     ☐ update

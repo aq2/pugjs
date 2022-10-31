@@ -1,7 +1,6 @@
-let firstPage = 'welcome'
+let firstPage = 'training'
 
 /// init
-  import {number, hey} from './mod.js'
   import {$, $all, $log, $hide, $show} from './aQuery.js'
 
   let oldTab = $('#' + firstPage)
