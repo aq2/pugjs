@@ -27,6 +27,7 @@ section {
 }
 body {
   margin: 0 auto;
+  max-width: 1920px;
 }
 aside {
   width: 25%;
@@ -191,10 +192,10 @@ span.quote {
 }
 table {
   border-collapse: collapse;
-  border: 2px solid #731c25;
+  border: 2px solid $tablehead;
   border-spacing: 0;
-  border-bottom: 18px solid #731c25;
-  background: #fff;
+  border-bottom: 18px solid $tablehead;
+  background: $tablebg;
   width: 85%;
   margin: 0 auto 1em auto;
   font-size: 1.25rem;
@@ -202,13 +203,13 @@ table {
 th,
 td {
   padding: 0.5em 1em;
-  color: #000;
+  color: $contenttext;
   border-collapse: collapse;
-  border: 1px solid #731c25;
+  border: 1px solid $tablehead;
 }
 th {
-  color: #fff;
-  background: #731c25;
+  color: $tableHeadText;
+  background: $tablehead;
 }
 th.last {
   border-right: none;

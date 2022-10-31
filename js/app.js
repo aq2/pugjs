@@ -1,4 +1,4 @@
-let firstPage = 'welcome' //?
+let firstPage = 'welcome'
 
 /// init
   import {number, hey} from './mod.js'
@@ -12,7 +12,6 @@ let firstPage = 'welcome' //?
 
 //
 //
-
 /// smerking tabs! 🚬  so easy...eventually
   const nav = $('nav')
   

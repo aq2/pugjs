@@ -1,5 +1,7 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-import { getFirestore, getDoc, doc, query, collection, where, getDocs } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+import { initializeApp } 
+  from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+import { getFirestore, getDoc, doc, query, collection, where, getDocs }
+  from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA8iNFJmvZUymc2nybinXIX7CQCVQ1XYpc",
@@ -9,6 +11,7 @@ const firebaseConfig = {
   messagingSenderId: "869334856470",
   appId: "1:869334856470:web:030887cfe7e660188b1637"
 }
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 // const docRef = doc(db, 'yogaWorkshops')
@@ -31,7 +34,7 @@ allSnap.forEach((doc) => {
 
 // probably be easier for me just to get them all, then map/reduce/filter queries?
 // no need to import query and where above
-// get nth doc - 0 here
+// get nth doc - 0 here - or it it id?
 const NdocRef = doc(db, 'yogaWorkshops', '0')
 const snapper = await(getDoc(NdocRef))
 if (snapper.exists()) {
