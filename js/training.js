@@ -1,5 +1,5 @@
 // get all workshops and studios!
-import { allYogaShops } from "./getCollections.js"
+import { allYogaShops } from './getCollections.js'
 import { $, $all, $log } from './aQuery.js'
 console.log(allYogaShops)
 

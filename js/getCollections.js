@@ -1,29 +1,34 @@
-import { initializeApp } 
-  from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-import { getFirestore, getDoc, doc, query, collection, where, getDocs }
-  from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+/// firestore init
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA8iNFJmvZUymc2nybinXIX7CQCVQ1XYpc",
-  authDomain: "pugjs-1dd3d.firebaseapp.com",
-  projectId: "pugjs-1dd3d",
-  storageBucket: "pugjs-1dd3d.appspot.com",
-  messagingSenderId: "869334856470",
-  appId: "1:869334856470:web:030887cfe7e660188b1637"
-}
+  import { initializeApp }
+    from 'https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js'
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app)
+  import { getFirestore, collection,  getDocs }
+    from 'https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js'
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyA8iNFJmvZUymc2nybinXIX7CQCVQ1XYpc",
+    authDomain: "pugjs-1dd3d.firebaseapp.com",
+    projectId: "pugjs-1dd3d",
+    storageBucket: "pugjs-1dd3d.appspot.com",
+    messagingSenderId: "869334856470",
+    appId: "1:869334856470:web:030887cfe7e660188b1637"
+  }
 
-// get them all
-export let allYogaShops = []
-const snapshot = await getDocs(collection(db, "yogaWorkshops"));
-snapshot.forEach((doc) => {
-  allYogaShops.push({ ...doc.data(), id: doc.id })
-});
+  const app = initializeApp(firebaseConfig)
+  const db = getFirestore(app)
 
 
+//
+/// get Yoga shops
+
+  export let allYogaShops = []
+  const snapshot = await getDocs(collection(db, "yogaWorkshops"))
+  snapshot.forEach((doc) => {
+    allYogaShops.push({ ...doc.data(), id: doc.id })
+  })
+
+//
 /// maybe
 
   // // get nth doc - 0 here - or it it id?

@@ -2,7 +2,7 @@
 ==================
 
 Todo:
-  ☐ bigger side images  
+  ✔ bigger side images @done(31-10-22 14:11)
   ☐ treatments layout
   ☐ button hover transitions
   ☐ icons on buttons
@@ -15,6 +15,7 @@ Todo:
   ☐ email
   ✔ radical redesign @done(31-10-22 11:46)
   ✔ tweak radical @done(31-10-22 11:47)
+  ☐ new repo and netlify
 
 
 //
@@ -38,7 +39,7 @@ firestore:
   ☐ backend for lots of things!
     ☐ add workshops
   ☐ data structures for workshops?
-  ☐ get all collections.js
+  ✔ get all yogashops.js @done(31-10-22 14:04)
   ☐ get simple CRUD
     ☐ create
     ☐ update
